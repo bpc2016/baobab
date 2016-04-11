@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genders">
+        <item>F</item>
+        <item>M</item>
+    </string-array>
+    <string-array name="edit_choices_array">
+        <item>Edit biodata</item>
+        <item>View/Edit notes</item>
+        <item>Lineage</item>
+        <item>Relation?</item>
+        <item>Share member</item>
+        <item>Delete member</item>
+    </string-array>
+    <string-array name="edit_parent_array">
+        <item>Edit biodata</item>
+        <item>View/Edit notes</item>
+        <item>Share member</item>
+    </string-array>
+    <string-array name="sort_array">
+        <item>Reorder children on this page</item>
+        <item>Reorder page owner\'s spouses</item>
+    </string-array>
+</resources>

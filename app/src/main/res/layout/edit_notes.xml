@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/edit_gender"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/gender"
+            android:src="@drawable/female_48">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/edit_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.80"
+            android:text="@+id/name"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/edit_date"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@+id/dates"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/separator"
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:background="#807a7a"></View>
+    <EditText
+        android:id="@+id/edit_note"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="top|center_vertical"
+        android:hint="@string/member_edit_note">
+    </EditText>
+    <LinearLayout
+        android:id="@+id/LinearLayout04"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/dividerVertical"
+        style="?android:attr/buttonBarButtonStyle"
+        android:measureWithLargestChild="true"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip"
+        android:paddingTop="0dip">
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/member_edit_confirm"
+            android:textColor="#ffffff"
+            android:background="@color/colorFooter">
+        </Button>
+</LinearLayout>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4"
+        android:scrollbars="vertical" >
+    </ListView>
+
+</LinearLayout>

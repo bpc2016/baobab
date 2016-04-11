@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/member_edit_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/genders" >
+    </Spinner>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/member_edit_first"
+            android:layout_width="0dip"
+            android:inputType="textCapSentences"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/member_edit_first"
+            android:imeOptions="actionNext" >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/member_edit_last"
+            android:layout_width="0dip"
+            android:inputType="textCapSentences"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/member_edit_last"
+            android:imeOptions="actionNext" >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/member_edit_yob"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/member_edit_yob"
+            android:imeOptions="actionNext" >
+        </EditText>
+        <EditText
+            android:id="@+id/member_edit_yod"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/member_edit_yod"
+            android:imeOptions="actionNext" >
+        </EditText>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/member_edit_note"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="top|center_vertical"
+        android:hint="@string/member_edit_note"
+        android:imeOptions="actionNext" >
+    </EditText>
+    <LinearLayout
+        android:id="@+id/LinearLayout04"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/dividerVertical"
+        style="?android:attr/buttonBarButtonStyle"
+        android:measureWithLargestChild="true"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip"
+        android:paddingTop="0dip">
+        <Button
+            android:id="@+id/member_edit_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/member_edit_confirm"
+            android:textColor="#ffffff"
+            android:background="@color/colorFooter">
+        </Button>
+        <Button
+            android:id="@+id/member_more_notes_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/member_more_notes"
+            android:textColor="#ffffff"
+            android:background="@color/colorFooter">
+        </Button>
+</LinearLayout>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4"
+        android:scrollbars="vertical" >
+    </ListView>
+
+</LinearLayout>
