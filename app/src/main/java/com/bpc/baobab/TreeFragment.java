@@ -19,22 +19,22 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 /**
- * Created by hp on 3/22/2016.
+ * Created on 3/22/2016.
+ * modified under graphics and re-imported here
  */
 public class TreeFragment extends Fragment {
+
+    //*********** constants
     public static final String MEMBER_ID = "MEMBER ID";
     public static final String SOURCE_ID = "SOURCE";
     public static final String TREE_DATA = "TREE DATA";
 
     //*********** constants
-    private static final float NON_POINT = -1; /* indiates this is not a 'real' vertex endpoint */
-    private static final float Y0 = 30; // depth of row_0
-    private float GAP_RATIO = 0.5f;  // position of endpoint w.r.t. gap between x values 0 ... 0.99
-
+    private float Y0 = 30; // depth of row_0
     private float DY = 100; // the vertical spacing between levels
-    private float PAD = 20; // left/right margins - modifes WIDTH
-    private float MRS = 30; // minimum regular separation
-    private float MES = 125; // minimum expandable separation
+    private float PAD = 50; // 20 left/right margins - modifes WIDTH
+    private float MRS = 20; // 75 minimum regular separation
+    private float MES = 101; // 125  minimum expandable separation
     private float Y1 = 23; // depth of pendant
     private float Y2 = 32; // depth of pendant
     private float Y3 = 16; // height of line
@@ -50,8 +50,7 @@ public class TreeFragment extends Fragment {
     private float LEFT, RIGHT;
     private ArrayList<String> mTreeData;
 
-    public TreeFragment() {
-    } // generic constructor
+    public TreeFragment() {} // generic constructor
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -62,7 +61,6 @@ public class TreeFragment extends Fragment {
         if (args != null) {
             mTreeData = args.getStringArrayList(TREE_DATA);
         }
-
 
         //fetch the display width/height to set as globals WIDTH/HEIGHT
         WindowManager wm = (WindowManager) getActivity().getSystemService(Context.WINDOW_SERVICE);
@@ -75,7 +73,7 @@ public class TreeFragment extends Fragment {
 
         Log.d(LOGGER, "width " + WIDTH);
 
-        dimensions(WIDTH);
+        dimensions(WIDTH); // reset these in context
 
         RIGHT = WIDTH - PAD;
         LEFT = PAD;
@@ -88,15 +86,17 @@ public class TreeFragment extends Fragment {
         return v;
     }
 
+
     /**
      * depending on width, determine what the dimensions should be
      */
     private void dimensions(float width) {
         if (width > 1000) {
             DY = 100 * 2; // the vertical spacing between levels
-            PAD = 20 * 2; // left/right margins - modifes WIDTH
-            MRS = 30 * 2; // minimum regular separation
-            MES = 125 * 2; // minimum expandable separation
+            PAD = 50 * 2; // left/right margins - modifes WIDTH
+            MRS = 20 * 2; // minimum regular separation
+            MES = 101 * 2; // minimum expandable separation
+            Y0 = 30 * 2; // depth of pendant
             Y1 = 23 * 2; // depth of pendant
             Y2 = 32 * 2; // depth of pendant
             Y3 = 16 * 2; // height of line
@@ -107,12 +107,12 @@ public class TreeFragment extends Fragment {
         }
     }
 
-
     /**
-     * use the list of encoded data to produce a tree
-     * string represents a row of data
-     * string is data&data&data seprating different strips
-     * strip is either a,b,c or a,b1:b2,c1:c2 depending on whether we use singular
+     * use the list of l1,l2, ...encoded data to produce a tree
+     * each li represents a row of data, with format
+     * li = data&data&data separating different strips_i or format_i
+     * format_i is one of skip|left|right
+     * strip_i is either a,b,c or a,b1:b2,c1:c2 depending on whether we use singular
      * or multiple expandables in the strip
      *
      * @param mTreeData : encoded data in a list of strings
@@ -121,22 +121,45 @@ public class TreeFragment extends Fragment {
         int k = 0;
         for (String encoded : mTreeData) {
             if (0 == k) {
-                theRows = new Rows(encoded)
-                        .endRow();
+                if(encoded.contains(",")){ // num,indexAr,labelsAr
+                    String [] Ar = encoded.split(",");
+                    int num = Integer.parseInt(Ar[0]);
+                    String[] sinAr = Ar[1].split(":");
+                    int[] index = new int[sinAr.length];
+                    for (int i = 0; i < sinAr.length; i++) {
+                        index[i] = Integer.parseInt(sinAr[i]);
+                    }
+                    String[] labels = Ar[2].split(":");
+                    theRows = new Rows(num, index, labels)
+                            .endRow(); // using the array version
+                } else
+                    theRows = new Rows(encoded)
+                            .endRow();
             } else {
-                String [] encAr = encoded.split("&");
-                for(String encStr: encAr) {
-                    if(encStr.equals("skip")){
+                String[] encAr = encoded.split("&");
+                for (String encStr : encAr) {
+                    if (encStr.equals("skip")) {
                         theRows.skip();
-                    } else if (encStr.contains(":")){
+                        continue;
+                    }
+                    if (encStr.equals("left")) {
+                        theRows.indentLeft();
+                        continue;
+                    }
+                    if (encStr.equals("right")) {
+                        theRows.indentRight();
+                        continue;
+                    }
+                    // else this is a .add :
+                    if (encStr.contains(":")) {
                         String[] Ar = encStr.split(",");
                         int num = Integer.parseInt(Ar[0]);
-                        String [] sinAr = Ar[1].split(":");
-                        int [] index = new int [sinAr.length];
-                        for(int i=0;i<sinAr.length;i++){
+                        String[] sinAr = Ar[1].split(":");
+                        int[] index = new int[sinAr.length];
+                        for (int i = 0; i < sinAr.length; i++) {
                             index[i] = Integer.parseInt(sinAr[i]);
                         }
-                        String [] labels = Ar[2].split(":");
+                        String[] labels = Ar[2].split(":");
                         theRows.add(new Strip(num, index, labels)); // using the array version
                     } else {
                         String[] Ar = encStr.split(",");
@@ -151,51 +174,13 @@ public class TreeFragment extends Fragment {
         }
     }
 
-    //Log.d(LOGGER, "i: "+T.parents(m) +" >> "+m.getSiblings());
-
-    //      }
-
-//        Log.d(LOGGER, "logs"); //use crumbs last index is: " + Leaves.get(0).print() + " .. "+ T.NodeAt(Leaves.get(0).getIndex())  );
-//        Toast.makeText(getActivity(),
-//                "tree done, size is: " + T.getCount(), Toast.LENGTH_LONG).show();
-
-/*
-        theRows = new Rows("home base")
-                .endRow()
-                .add(new Strip(7, new int[]{0, 3, 4}, new String[]{"first guy", "then another", "third one"}))
-//                .add(new Strip(7, new int[]{3, 4}, new String[]{"first guy", "then another"}))
-                .endRow()
-                .add(new Strip(4, 3, "member 3"))
-                .add(new Strip(4, 0, "member four"))
-                .add(new Strip(2, 1, "member five"))
-                .endRow()
-                .add(new Strip(4, 3, "member 3"))
-                .add(new Strip(5, new int[]{0, 4}, new String[]{"first guy", "then another"}))
-                .add(new Strip(4, 2, "member five"))
-                .endRow()
-        ;*/
-
-
-/*    public static TreeFragment newInstance(String member_id, int source_id) {
-        TreeFragment f = new TreeFragment();
-        Bundle bdl = new Bundle();
-        bdl.putString(MEMBER_ID, member_id);
-        bdl.putInt(SOURCE_ID, source_id);
-        f.setArguments(bdl);
-        return f;
-    }*/
-
     public static Fragment newInstance(ArrayList<String> list) {
         TreeFragment f = new TreeFragment();
         Bundle bdl = new Bundle();
         bdl.putStringArrayList(TREE_DATA, list);
         f.setArguments(bdl);
-        for(String s: list){
-            Log.d(LOGGER, "K: " + s);
-        }
         return f;
     }
-
 
     //********** private classes
 
@@ -243,22 +228,21 @@ public class TreeFragment extends Fragment {
             paint.setColor(Color.GREEN);
             paint.setStrokeWidth(LW);
             // draw the edge to level above, provided we are NOT the top level!
-            if (y - DY > 0)
+            if (y > Y0)
                 canvas.drawLine(x, y, x, y - Y1, paint);
         }
     }
 
     public class Strip {
         private ArrayList<Vert> vertices = new ArrayList<>(); /* this row's vertices */
-        private ArrayList<Integer> xpos = new ArrayList<>(); /* where these occur */
+        private ArrayList<Integer> labelPos = new ArrayList<>(); /* where these occur */
         //bounds
-        float left = LEFT, L;
-        float right = RIGHT, R;
+        float left = LEFT;
+        float right = RIGHT;
         //x-coordinate above
         float upx = 0; /* x-coordinate we all poiunt up to */
         float y; /* common y-coordinates */
         int level = 0;
-        boolean empty = true;  /* is this an empty strip? default is yes*/
 
         /**
          * @param numvtcs : number of vertices in this strip
@@ -277,7 +261,6 @@ public class TreeFragment extends Fragment {
                 }
                 vertices.add(V);
             }
-            empty = false;
         }
 
         Strip(int numvtcs, int index, String label) {
@@ -288,14 +271,6 @@ public class TreeFragment extends Fragment {
                 }
                 vertices.add(V);
             }
-            empty = false; /*default non-empty*/
-        }
-
-        Strip() {
-        } //blank strip
-
-        public boolean isEmpty() {
-            return empty;
         }
 
         public Strip setUpx(float upxvalue) {
@@ -303,9 +278,10 @@ public class TreeFragment extends Fragment {
             return this;
         }
 
-        public Strip setLevel(int lev) {
+        public Strip setLevel(int lev, float in_y) {
             level = lev;
-            y = Y0 + lev * DY;
+            //y = Y0 + lev * DY;
+            y = in_y;
             for (Vert V : vertices) {
                 V.y = y;
             }
@@ -318,7 +294,7 @@ public class TreeFragment extends Fragment {
          * @param dx : amount to translate by
          * @return : this same strip, so we can tandem
          */
-        public Strip shift(float dx) {
+        public Strip moveBy(float dx) {
             for (Vert V : vertices) {
                 V.x += dx;
             }
@@ -327,8 +303,11 @@ public class TreeFragment extends Fragment {
             return this;
         }
 
+        public float getWidth() {
+            return right - left;
+        }
+
         public void draw(Canvas canvas) {
-            if (empty) return;
             if (vertices.size() > 0) {
                 for (Vert V : vertices) {
                     V.draw(canvas);
@@ -339,66 +318,57 @@ public class TreeFragment extends Fragment {
             paint.setColor(Color.GREEN);
             paint.setStrokeWidth(LW);
             canvas.drawLine(left, y - Y1, right, y - Y1, paint);
-            //line to parent
-            canvas.drawLine(upx, y - Y1, upx, y - DY + Y2 + Y3, paint);
+            //line to parent - provided possible
+            if (y - DY + Y2 + Y3 > 0)
+                canvas.drawLine(upx, y - Y1, upx, y - DY + Y2 + Y3, paint);
         }
 
-        public void placeVerts() {
+        /**
+         * assign x-positions for each vert in vertices
+         * @param lf : the start position
+         */
+        public void placeVerts(float lf) {
             float xx = left;
             //are we at the top?
             if (vertices.size() == 1) {
-                xx = (left + right) / 2;
                 Vert V = vertices.get(0);
-                V.x = xx;
-                xpos.add(0);
+                V.x = (LEFT + RIGHT) / 2;
+                labelPos.add(0);
+                return;
             }
-            //linearly set the vertices - start with the margins, left and right
-            xx = left;
-            int i = 0;  /* fill xpos using this index */
-            float dx = (right - left) / (vertices.size() - 1);
+            int i = 0;  /* fill labelPos using this index */
             for (Vert V : vertices) {
-                V.x = xx;
-                if (!V.label.isEmpty()) {
-                    xpos.add(i);
-                }
-                xx += dx;
+                if (!V.label.isEmpty()) labelPos.add(i);
                 i++;
             }
-            // fix gaps
-            narrowGaps(); // modify gaps if necessary
-        }
-
-
-        private void narrowGaps() {
-            int num = vertices.size();
-            int i;
-
+            // use MRS, also set right
             int k = 0;
+            left = lf;
             for (Vert V : vertices) {
-                V.x = left + k * MRS;
+                right = V.x = lf + k * MRS;
                 k++;
             }
-
             // next we extend the widths - only if more than one expandable
-            if (xpos.size() > 1) {
+            if (labelPos.size() > 1) {
                 k = 0;
-                int numxpos = xpos.size();
+                int numLabels = labelPos.size();
+                int num = vertices.size();
                 float factor = 0; // to bloat by
                 float[] delta = new float[num];
                 for (i = 0; i < num; i++) {
                     delta[i] = factor;
-                    if (k < numxpos && i == xpos.get(k)) {
-                        if (k + 1 == numxpos) {
+                    if (k < numLabels && i == labelPos.get(k)) {
+                        if (k + 1 == numLabels) {
                             factor = 0;
                         } else {
-                            int gap = xpos.get(k + 1) - xpos.get(k);
+                            int gap = labelPos.get(k + 1) - labelPos.get(k);
                             if (gap * MRS < MES) {
                                 factor = MES / gap;
                             } else {
                                 factor = 0;
                             }
                         }
-                        k++; // look at the next xpos
+                        k++; // look at the next labelPos
                     }
                 }
                 //add
@@ -408,105 +378,76 @@ public class TreeFragment extends Fragment {
                     shift += delta[k++];
                     V.x += shift;
                 }
+                // also change the boundaries ...
+                left += delta[0];
+                right += shift;
             }
-
-            float new_l = vertices.get(0).x; //left
-            float new_r = vertices.get(num - 1).x; // was V
-
-            float wd = new_r - new_l;
-            float shift_amount = ((right - left) - wd) / 2;
-
-            k = 0;
-            for (Vert V : vertices) {
-                V.x += shift_amount;
-            }
-            left = new_l + shift_amount;
-            right = new_r + shift_amount;
         }
-    }
 
+        /**
+         * @return the amount of moveBy required to set the COG of xs's in the middle
+         */
+        private float setAveZero() {
+            float shift = 0, mid = (LEFT + RIGHT) / 2;
+
+            for (int i : labelPos) {
+                Vert V = vertices.get(i);
+                shift += (mid - V.x);
+            }
+            return shift / labelPos.size();
+        }
+
+
+    }
 
     public class Rows {
         private ArrayList<Strip> strips = new ArrayList<>(); /* this row's 'vertices' */
         private ArrayList<Float> xs = new ArrayList<>();
         private int level = 0;
         private int xptr = 0; /* how many xs's consumed */
-        private float ratio = GAP_RATIO;
+        private float current_y = 0;
 
-        public Rows(String label) {
-            Strip S = new Strip(1, 0, label)
-                    .setLevel(0);
-            S.left = S.right = (LEFT + RIGHT) / 2;
+        /**
+         * constructor that produces a row of >1 items
+         * @param numvtcs : number of vectors in total
+         * @param indexAr : array of indices of labeled vertices
+         * @param labelAr : associated labels
+         */
+        public Rows(int numvtcs, int[] indexAr, String[] labelAr) {
+            current_y = Y0+5;
+            Strip S = new Strip(numvtcs, indexAr, labelAr)
+                    .setLevel(0, current_y);
             strips.add(S);
         }
 
+        /**
+         * constructor with sole root
+         * @param label : root label
+         */
+        public Rows(String label) {
+            current_y = Y0;
+            Strip S = new Strip(1, 0, label)
+                    .setLevel(0, current_y);
+            strips.add(S);
+        }
+
+        /**
+         * called at the end of each row added. clean up
+         * @return : this, for tandem calls
+         */
         public Rows endRow() {
-            xptr = 0;
-            //count how many, how many empty
-            int empty = 0, all = 0;
+            //assign the x-coordinates of each strip S
+            float left_edge = 0; // LEFT??
             for (Strip S : strips) {
                 if (S.level != level) continue;
-                if (S.isEmpty()) empty++;
-                all++;
+                //place our vertices, establish left <-- left_edge ++
+                S.placeVerts(left_edge);
+                left_edge += S.getWidth() + MRS;
             }
-            /**
-             * this section handles empty strips in the call: 'Strip()'
-             * and decides the sharing of endpoints for strips
-             */
-            //decide 'empty' width - 4:1 full:empty
-            float ewidth = (RIGHT - LEFT) / (4 * (all - empty) + empty);
-            //set left/right boundaries
-            float ll = LEFT; //,rr;
-            boolean onEmpty = true;
-            int emptyRight = empty;
-            for (Strip S : strips) {
-                if (level == 0) continue;  //skip the top
-                if (S.level != level) continue;
-                S.left = ll;
-                if (onEmpty) {
-                    if (S.isEmpty()) {
-                        ll = S.right = ll + ewidth;
-                        if (emptyRight > 0) emptyRight--;
-                    } else {
-                        onEmpty = false;
-                        if (xptr == xs.size() - 1) { // last strip
-                            S.right = RIGHT - ewidth * emptyRight;
-                        } else {
-                            ll = nextLeft(S); // also increments xptr
-                        }
-                    }
-                } else {
-                    if (S.isEmpty()) {
-                        ll = S.right = ll + ewidth;
-                        if (emptyRight > 0) emptyRight--;
-                        onEmpty = true;
-                    } else {
-                        if (xptr == xs.size() - 1) { // last strip
-                            S.right = RIGHT - ewidth * emptyRight;
-                        } else {
-                            ll = nextLeft(S);  // also increments xptr
-                        }
-                    }
-                }
-            }
-            /**
-             * assign the x-coordinates of each strip S
-             */
-            for (Strip S : strips) {
-                if (S.level != level) continue;
-                S.L = S.left;
-                S.R = S.right; // keep prev values
-                S.placeVerts();
-            }
-
-            /**
-             * modify one last time - align verticals to expandable above
-             */
-            alignAll();
-
-            /**
-             * replace listing xs with the x-coordinates for the next level - positions of labelled vertices
-             */
+            //fix the relative positions of strips. average for solitaries.
+            //take separations and xs' into account for more
+            arrangeStrips(); // see below
+            //replace listing xs with the x-coordinates for the next level - positions of labelled vertices
             xs = null;
             xptr = 0;
             for (Strip S : strips) {
@@ -521,62 +462,67 @@ public class TreeFragment extends Fragment {
                     xs = newxs;
                 } else xs.addAll(newxs);
             }
-
+            current_y += DY;
             level++;
-
-            //debugging
-//            String res = "";
-//            for (float re : xs) {
-//                res += "," + re;
-//            }
-//            Log.d(LOGGER, "endRow : xs=" + res);
             return this;
         }
 
-        /**
-         * compare the left/right endpoints of each strip against the x-coordinate
-         * of its assoiated labelled ancestor. shift to the edge if outside, else keep as is
-         */
-        private void alignAll() {
-            if (level == 0) return;
-            for (Strip S : strips) {
-                if (level != S.level) continue;
-                if (S.upx > S.right) {
-                    float shift = S.upx - S.right; //(S.right+S.left)/2;
-                    for (Vert V : S.vertices) {
-                        V.x += shift;
-                    }
-                    S.left += shift;
-                    S.right += shift;
-                }
-                if (S.upx < S.left) {
-                    float shift = //(S.right+S.left)/2
-                            S.left - S.upx;
-                    for (Vert V : S.vertices) {
-                        V.x -= shift;
-                    }
-                    S.left -= shift;
-                    S.right -= shift;
-    Log.d(LOGGER, "align : LL=" + S.left);
-                }
-            }
-        }
 
         /**
-         * determine the x-coordinate of the next strip's left end
-         * depends on the x values of exapnadables above, and uses this Rows object ratio 0 < ratio < 1
-         *
-         * @param S : strip
-         * @return the desired value for S*.left
+         * list optional arrangements taking into account the values in xs
+         * create  arrays lower[], upper[] of possible positions of the left endpoint of each
+         * strip in strips at the given level. the lower[] considers the values xs and a minimal
+         * separation of MES between adjacent strips. fix positions by choosing to moveBy S
+         * by the average of the two.
          */
-        private float nextLeft(Strip S) {
-            float ratio = this.ratio * 0.5f;
-            float ll, nr;
-            nr = S.right = (1 - ratio) * xs.get(xptr) + ratio * xs.get(xptr + 1);
-            ll = ratio * xs.get(xptr) + (1 - ratio) * xs.get(xptr + 1);
-            xptr++;
-//            Log.d(LOGGER, "nextLeft : ll=" + ll + ", nr=" + nr);
-            return ll;
+        private void arrangeStrips() {
+            // select the strips we want
+            ArrayList<Strip> myStrips = new ArrayList<>();
+            for (Strip S : strips) {
+                if (S.level == level) myStrips.add(S);
+            }
+            // only one?
+            if (myStrips.size() == 1) {
+                Strip S0 = myStrips.get(0);
+                S0.moveBy(S0.setAveZero());
+                S0.left = S0.vertices.get(0).x;
+                S0.right = S0.vertices.get(S0.vertices.size()-1).x;
+                if (null==xs || xs.size()==0)return; // in case this is level 0
+            }
+            // ok, more ...
+            float[] lower = new float[myStrips.size()];
+            float L = LEFT; //+PAD;
+            for (int k = 0; k < myStrips.size(); k++) {
+                Strip S = myStrips.get(k);
+                float width = S.getWidth();
+                float Lopt = xs.get(k) - width;
+                lower[k] = L < Lopt ? Lopt : L;
+                L = lower[k] + width + MES;
+            }
+            float[] upper = new float[myStrips.size()];
+            float R = RIGHT; //-PAD;
+            for (int k = myStrips.size() - 1; k > -1; k--) {
+                Strip S = myStrips.get(k);
+                float width = S.getWidth();
+                float Ropt = xs.get(k) + width;
+                upper[k] = R > Ropt ? Ropt : R;
+                R = upper[k] - width - MES;
+            }
+            for (int k = 0; k < myStrips.size(); k++) {
+                Strip S = myStrips.get(k);
+                float ave = (lower[k] + upper[k]) / 2;
+                S.moveBy(ave - (S.right + S.left) / 2);
+                // this may still be inadequate, fix it ..
+                float dx = S.left - S.upx;
+                if (dx > 0) {
+                    S.moveBy(-dx);
+                } else {
+                    dx = S.upx - S.right;
+                    if (dx > 0) {
+                        S.moveBy(dx);
+                    }
+                }
+            }
         }
 
         void draw(Canvas canvas) {
@@ -589,18 +535,26 @@ public class TreeFragment extends Fragment {
          * move to the next xs by shifting xptr up
          * @return : this
          */
-        public Rows skip(){
+        public Rows skip() {
             xptr++;
             return this;
         }
 
+        public Rows indentLeft() {
+            LEFT+=(RIGHT-LEFT)/4;
+            return this;
+        }
+
+        public Rows indentRight() {
+            RIGHT -=(RIGHT-LEFT)/4;
+            return this;
+        }
+
         public Rows add(Strip S) {
-            if (!S.isEmpty()) {
-                if (xptr >= xs.size()) return this; /* too many for this level */
-                S.setUpx(xs.get(xptr));
-                xptr++;
-            }
-            strips.add(S.setLevel(level));
+            if (xptr >= xs.size()) return this; /* too many for this level */
+            S.setUpx(xs.get(xptr));
+            xptr++;
+            strips.add(S.setLevel(level, current_y));
             return this;
         }
     }
@@ -609,7 +563,6 @@ public class TreeFragment extends Fragment {
     public class TreeView extends View {
         private Rows theRows;
         private int theWidth, theHeight;
-
 
         public TreeView(Context context, Rows theRows, int theWidth, int theHeight) {
             super(context);
@@ -620,10 +573,8 @@ public class TreeFragment extends Fragment {
 
         @Override
         protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-            setMeasuredDimension(theWidth, theHeight); //(576, 822); // setMeasuredDimension(100, 100);
-//        setMeasuredDimension( getSuggestedMinimumWidth(),getSuggestedMinimumHeight());
+            setMeasuredDimension(theWidth, theHeight);
         }
-
 
         @Override
         protected void onDraw(Canvas canvas) {
@@ -634,3 +585,7 @@ public class TreeFragment extends Fragment {
 
     }
 }
+
+
+
+

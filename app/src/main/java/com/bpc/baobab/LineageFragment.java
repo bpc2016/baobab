@@ -20,7 +20,6 @@ import java.util.HashMap;
 public class LineageFragment extends Fragment {
 
     public static final String MEMBER_ID = "MAIN MEMBER";
-    public static final String TREE_TYPE = "TREE TYPE"; // either single or double
 
     private static final String LOGGER = "bpc_lineage"; //Log.d(LOGGER, "page = " + real_id + ", member = " + member_id);
     public static final int SOURCES = 0;
@@ -29,7 +28,6 @@ public class LineageFragment extends Fragment {
 
     private String memID;
     private ArrayList<Integer> mNodes = new ArrayList<>();
-    private ArrayList<String> mtNodes = new ArrayList<>(); // alternate when we compare two nodes
     private ArrayList<String> mTitle = new ArrayList<>();
     private Tree myTree, oTree;
     private HashMap<Integer, Boolean> mRev = new HashMap<>(); // whether we are reversed or not (for teh first line)
@@ -168,7 +166,7 @@ public class LineageFragment extends Fragment {
     Tree.Node getLeast(Tree T, Tree.Node n){
         // descend to least common
         Tree.Node n0=n,n1=n;
-        Tree.Node nn0=null,nn1=null;
+        Tree.Node nn0,nn1;
         boolean agree=true;
         while(agree){
             nn0= myTree.getNode(n0.homewards());
@@ -230,7 +228,7 @@ public class LineageFragment extends Fragment {
         ArrayList<String> L = new ArrayList<>();
         ArrayList<Tree.Node> p = myTree.path(src);
         int k = 0;
-        String sibs = "";
+        String sibs;
         for (Tree.Node m : p) {
             if (0 == k) {
                 L.add(myTree.nodeNames(m));
@@ -297,11 +295,12 @@ public class LineageFragment extends Fragment {
                 lstr = null==ln? "" : getStrip(LT,ln);
                 if(lstr.isEmpty() && two_column){
                     two_column=false;
-                    lstr = "skip"; // we want to skip the first xs
+                    lstr = "skip&left"; // we want to skip the first xs
                 }
                 rstr = null==rn? "" : getStrip(RT,rn);
                 if(rstr.isEmpty() && two_column){
                     two_column=false; // we simply ignore the second xs
+                    lstr = "right&"+lstr;
                 }
                 if(!lstr.isEmpty() && !rstr.isEmpty()){
                     L.add(lstr+"&"+rstr);
@@ -310,6 +309,7 @@ public class LineageFragment extends Fragment {
                 } else if (!rstr.isEmpty()){
                     L.add(rstr);
                 }
+    Log.d(LOGGER, "LL: " + L.get(L.size()-1));
             }
             //decide whether to proceed
             k++;
