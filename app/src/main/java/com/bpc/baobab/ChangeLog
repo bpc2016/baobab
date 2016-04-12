@@ -1,0 +1,163 @@
+jan 09
+1. decided that we should revive teh back button - or else kill the addbackstack altogether. so have two branches
+the one today will try to revive
+1.2. strategy - when going UP have a separate 'nextpage' than for going down.
+1.3. here is the 'escaped back button, double back to exit code':
+
+==============================================================================
+// in onepagefrgment
+
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+        Bundle args = getArguments();
+        if (args != null) {
+            mOwner = args.getString(OWNER);
+            mPageID = args.getString(PAGEID);
+        } else {
+            Log.d(LOGGER, "onepage -  no arguments!");
+        }
+
+        View v = inflater.inflate(R.layout.one_page_fragment, container, false);
+
+        layout1 = v.findViewById(R.id.layout1);
+        oNameText = (TextView) v.findViewById(R.id.ow_name);
+        oDateText = (TextView) v.findViewById(R.id.o_date);
+        oImage = (ImageView) v.findViewById(R.id.o_icon);
+        layout2 = v.findViewById(R.id.layout2);
+        sNameText = (TextView) v.findViewById(R.id.s_name);
+        sDateText = (TextView) v.findViewById(R.id.s_date);
+
+        v.setFocusableInTouchMode(true);
+        v.requestFocus();
+        v.setOnKeyListener(
+                new View.OnKeyListener() {
+                    @Override
+                    public boolean onKey(View v, int keyCode, KeyEvent event) {
+                        if (keyCode == KeyEvent.KEYCODE_BACK) {
+                            if (doExit==2) {
+                                getActivity().finish();
+                            } else {
+                                if (doExit==1)
+                                    Toast.makeText(getActivity(),"press back once more to exit this app", Toast.LENGTH_SHORT).show();
+                                doExit++;
+                            }
+                            return true;
+                        }
+                        doExit=0;
+                        return false;
+                    }
+                }
+        );
+
+        // this viewadpater is to stand between the db access from cursorloader and display list
+        vAdapter = new ViewAdapter(getActivity(), R.layout.one_page_fragment, null);  //
+        setListAdapter(vAdapter);
+        getDetails(); // uses mOwner etc
+        return v;
+    }
+==================================================================================
+1.5. have changed nextPages --> nextPagesUp to reflect the call is from the parents
+1.6. oops! cant communicate directly between fragments!!
+1.7.done - needed to create an onpagechangelistener that sets the current page - this takes care of
+swiping before moving. this sets a variable sPos (change this name later)
+2.0.solved why does Kaunda senior's sister not receive the uplink to the parents?? bad data
+2.1 this member Margaret Lucy Kaunda (569) is missing a par_pages entry (197) to match that of brother Matin Peter Kaunda (595):
+569~Kaunda~Margaret Lucy~19??~19??~F~~~~
+595~Kaunda~Martin Peter~1898~1954~M~38~197 ...
+change to
+569~Kaunda~Margaret Lucy~19??~19??~F~~197~~
+3.1.done implement upnext for negative my_page field: only the one change on the main
+3.2.done - exit on menu,
+3.3.donw - general use of popstack from fragmentmanager
+4.done switch to spouse, set HOME (do allthe navigation stuff before editing)
+5.done new spouses - idea is to use something similar to newmember - a listfrag that is invoked by
+clicking on the blank icon for spouse; needs change to the layout file; use of 'footer' for a listfragment
+7.done - crash when we move to 'new data' from a full set of pages
+7.done progress counter for file operations
+6. done dialogs
+=======================================================
+Jan 26
+1. Moved  everything to here - Baobab6. 5 didnt work on account of xml nonsense, so this follows from 4
+what we wnat here is to expunde the '-' signifying owner/spouse. That data is already there in the db - which field
+the member is attached at. So we hope to use similar algorithms for allowing adding spouses to a 'spouse'
+we also wanted more clarity on what Android really wants. So this was rebuilt in line with android studio
+1.1 navigation down requires negatives: up to spouse parent, down comes back with spouse in owner position
+1.2. done 'adam' how can we set a spouse as 'home'? - swap, make permanent
+2.done extend dialogs to new pages: now calls this when user creates new page
+3. todo - perhaps use a preference mechanism to stop persistent dialogs (e.g the proposed one above)
+4.done have 'swap' come from a click on the 'missing icon' for parent spouse
+5. todo - have view of notes come from a click on an icon extreme right ( start with the space alone)
+6.done - use new xml - the current one slows everything down. Be sure that the buttons behave well with soft keyboard
+=================================
+Feb 4
+1. decided to make a 'swap' permanent change  possible by a dialog to that effect
+2.done portability - db inclusion wasnt as good as my own system - see version 7 for this
+3.done decided against remove spinners from the new parents xml - just placed icons instead of text
+4.done - implement delete!! trickier than i thought
+5.done - sort - children and spouses - at any point (not just at the start!)
+6. todo - share data
+7.done search data. use searchview. some hassle getting this to work under fragments. still remaining is to have qualified searches
+8. todo - find teh relation between m1 and m2. idea: pars(m) gives two members attached to a list, iterate, find intersection
+============================================
+version 1.1
+
+* replaced the footer in onepage by a collection of icons. allows us to call 'set home' and ...
+* implemented reorder kids - this was going to be hard if left to the menus under mainactivity: now with buttons (imagebuttons)
+that are visible to the fragment simplifies this
+* discovered an awkward bug in newparents - will mean a 'recall' of 1.0: was placing an '=' in front of pageid!
+* implmented reorder spouses: had to deal with a bug in the listing. done
+===============================================
+version 1.2
+
+* better use of the list adapter for sorting (more readable/portable) - will change the UI below. Note how we had
+to keep mSelected as a 'global' - mainly for configuration changes.
+* move the 'maintenance' routines to a button under file
+* improved sorting algorithm and UI
+=====================================================
+version 1.3
+was supposed to use CAB (Conetx Actionmode Bar) - too many problems!
+* CAB kept appearing above the actionbar, differs from 4.1 and 5.1. Not clear that this is an appcompat issue
+* couldnt really resolve handling rotation - became very hacky
+* abandoned, back to basic 1.2.0 which is now renamed 1.4. Will keep this particualr cut as 1.4.0 i in p-drive
+====================================================
+version 1.4
+- nothing here
+
+version 1.5
+* instead of CAB, try to style the alert dialog see  http://stackoverflow.com/questions/3920640/how-to-add-icon-in-alert-dialog-before-each-item
+* note the awkward way required to maintain the font/size of the accompanying text
+
+version 1.6.0
+* implemented tabs, looking to align design with ideas from text, need to get a tablet option going
+* want to hide connection to db - abstract layer?
+
+version 1.6.1
+* moved all references of tables and db details to 'Family' helper class - only search utility
+* cleaned up delete and other methods (removed subtle bugs)
+
+version 1.6.2
+* added class Tree with Node that extends Member. Use this to demo linking arbitrary member with 'base member'
+
+version 1.7.0
+* added TreeFragment and LineageFragment to illustrate sources . Note that this is an option for modifying OnePageFragment
+
+version 1.7.1
+* lineage search - lists all of a child's roots
+
+version 1.7.2
+* use lineage to determine the relation to 'myself' - the member whose page is home. Has revealed some issue
+- cannot handle step-relations at any level
+- there is trouble with the data for Viola!
+- layout algorithm is inadequate, will start with this fix
+
+
+ideas for merge
+---------------
+1. have a 'prep' to align the members ??
+2. exchange similarly prepped entire files
+3. method isolates the diffs, each with associated anchor
+3.1 diff should accept swapped owner/spouse as equal
+4. even a changed member - child anch=par page, else par w/o page anch=owner/spouse page
+5. perhaps have adisplay that indicates alternate w an icon. click gives dialog with change, accept or not
+6.
