@@ -14,8 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
-import android.widget.Toast;
-
 import java.util.ArrayList;
 
 /**
@@ -25,8 +23,6 @@ import java.util.ArrayList;
 public class TreeFragment extends Fragment {
 
     //*********** constants
-    public static final String MEMBER_ID = "MEMBER ID";
-    public static final String SOURCE_ID = "SOURCE";
     public static final String TREE_DATA = "TREE DATA";
 
     //*********** constants
@@ -192,7 +188,6 @@ public class TreeFragment extends Fragment {
         private String label = ""; /* empty unless this is a 'pointed' vertex, which is only possible for 'reals' */
         private float x = 0; /* x- coordinate*/
         public float y;
-        public int strip; /* each vertex belongs to a strip of siblings */
 
         public Vert() {
         }
@@ -328,7 +323,6 @@ public class TreeFragment extends Fragment {
          * @param lf : the start position
          */
         public void placeVerts(float lf) {
-            float xx = left;
             //are we at the top?
             if (vertices.size() == 1) {
                 Vert V = vertices.get(0);
