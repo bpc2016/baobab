@@ -157,36 +157,6 @@ public class LineageFragment extends Fragment {
         }
     }
 
-    /**
-     *  return the least common node down myTree and along T_1 from n
-     * @param T : second tree
-     * @param n : the common leaf node to start from
-     * @return : the desired final common
-     */
-    Tree.Node getLeast(Tree T, Tree.Node n){
-        // descend to least common
-        Tree.Node n0=n,n1=n;
-        Tree.Node nn0,nn1;
-        boolean agree=true;
-        while(agree){
-            nn0= myTree.getNode(n0.homewards());
-            nn1=T.getNode(n1.homewards());
-            agree= nn1.getID().equals(nn0.getID());
-            if(agree) {n0=nn0; n1=nn1;}
-        }
-        Log.d(LOGGER, "starting from : " + n.print());
-        Log.d(LOGGER, "final common: " + n0.print());
-        // see how the two compare here
-//        Log.d(LOGGER, "myTree: " + n0.print());
-//        Log.d(LOGGER, "T: " + n1.print());
-        Log.d(LOGGER, "M: " + myTree.nodeNames(n0));
-        Log.d(LOGGER, "T: " + T.nodeNames(n1));
-        ArrayList<Tree.Node> q = T.path(n1.getMyad());
-        for (Tree.Node m:q){
-            Log.d(LOGGER, "T: " + T.nodeNames(m));
-        }
-        return n0;
-    }
 
     /**
      * reduce leaves L to the intersection with those of tree T
