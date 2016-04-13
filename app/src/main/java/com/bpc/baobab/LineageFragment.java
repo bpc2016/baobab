@@ -31,7 +31,7 @@ public class LineageFragment extends Fragment {
     private ArrayList<String> mTitle = new ArrayList<>();
     private Tree myTree, oTree;
     private HashMap<Integer, Boolean> mRev = new HashMap<>(); // whether we are reversed or not (for teh first line)
-    private HashMap<Integer, String> mLineOne = new HashMap<>(); // encoded first line per src
+    private HashMap<Integer, String> mFirstLine = new HashMap<>(); // encoded first line per src
     private HashMap<Integer, Integer> mOsrc = new HashMap<>();  // the src address from Otree
     private boolean getRelation = false; // whether we are comparing two or not ...
     private int mType;
@@ -118,11 +118,11 @@ public class LineageFragment extends Fragment {
         Log.d(LOGGER, "diff T : " + nt.getID() + " : " + nt.print());
 
                     // determine size, location of siblings
-                    String sibs = nt.getSiblings();
-        Log.d(LOGGER, "siblings : " + sibs);
+                    String t_sibs = nt.getSiblings();
+        Log.d(LOGGER, "siblings : " + t_sibs);
                     String nt_id = nt.getID(), nm_id = nmgood.getID();
                     int nm_src = nm_prev.getMyad();
-                    String[] myAr = sibs.split(" ");
+                    String[] myAr = t_sibs.split(" ");
                     int i_t = -1, i_m = -1, num = myAr.length;
                     for (int j = 0; j < num; j++) {
                         if (myAr[j].equals(nt_id)) {
@@ -132,8 +132,32 @@ public class LineageFragment extends Fragment {
                             i_m = j;
                         }
                     }
-                    if (i_m < 0 || i_t < 0) {
-        Log.d(LOGGER, "need to use a higher level - not direct siblings! ");
+                    if (i_m < 0 ) { // only one that can be -1
+        Log.d(LOGGER, "not direct siblings! m : " );
+                        // try step relations
+        //                String spouses = nm_prev.getSpouses();
+                        String m_sibs = nmgood.getSiblings();
+        Log.d(LOGGER, "other siblings : " + m_sibs);
+                        myAr = m_sibs.split(" ");
+                        // fix i_m this time ..
+                        int m_num = myAr.length;
+                        for (int j = 0; j < m_num; j++) {
+                            if (myAr[j].equals(nm_id)) {
+                                i_m = j;
+                            }
+                        }
+//      return(num + "," + index + "," + T.nodeNames(m));
+                        String t_str = num +","+i_t+","+oTree.nodeNames(nt),
+                                m_str = m_num +","+i_m+","+myTree.nodeNames(nmgood);
+        Log.d(LOGGER, "line_1 data : t = " + t_str +", m= "+m_str);
+                        // still have to decide the order m<t or t<m ? comes from deciding 1st row
+                        String mypages = nm_prev.getMyPages()
+                                ,m_par = nmgood.getPar()
+                                ,t_par = nt.getPar();
+                        myAr = mypages.split(" ");
+                        int z_num = myAr.length;
+
+        Log.d(LOGGER, "pages: "+mypages +", t -> "+t_par+", m -> "+m_par +" z_num = "+z_num);
                     } else { // encode
                         // decide left, right, default is M left, T right
         Log.d(LOGGER, "num, i_m, i_t : " + num + ", " + i_m + ", " + i_t);
@@ -145,7 +169,7 @@ public class LineageFragment extends Fragment {
                             encoding += i_t + ":" + i_m + "," + oTree.nodeNames(nt) + ":" + myTree.nodeNames(nmgood);
                         } else
                             encoding += i_m + ":" + i_t + "," + myTree.nodeNames(nmgood) + ":" + oTree.nodeNames(nt); // the default
-                        mLineOne.put(nm_src, encoding); // map the path source to encoding for first line
+                        mFirstLine.put(nm_src, encoding); // map the path source to encoding for first line
         Log.d(LOGGER, "encoding = " + encoding);
                         // deal with it
                         mOsrc.put(nm_src,nt_prev.getMyad()); // assign the int address for tree Otree here
@@ -251,16 +275,16 @@ public class LineageFragment extends Fragment {
         Tree.Node ln,rn;
         String lstr, rstr;
         int k=0,
-                lsize = Lp.size(), rsize = Rp.size();
+            lsize = Lp.size(), rsize = Rp.size();
         int msize = Math.max(lsize, rsize);
         boolean go_on = true, two_column=true;
         while(go_on) {
             ln = k<lsize? Lp.get(k): null; // ln == left node ...
             rn = k<rsize? Rp.get(k): null;
             if (k == 0) {
-                L.add(LT.nodeNames(ln)); //doesn't matter here
+                L.add(LT.nodeNames(ln)); // we either present just the names - OR (if contains a comma)
             } else if (k == 1) {
-                L.add(mLineOne.get(src));
+                L.add(mFirstLine.get(src)); // special first line - has a single strip
             } else {
                 lstr = null==ln? "" : getStrip(LT,ln);
                 if(lstr.isEmpty() && two_column){

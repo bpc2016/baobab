@@ -242,7 +242,6 @@ public class Tree {
             super(memID); // base class is Member
         }
 
-
         public int getMyad(){ return my_ad; }
         public int homewards() { return home_ad; }
         public String getSiblings() { return siblings; }

@@ -416,8 +416,18 @@ public class Family {
     }
 
     /**
-     *  the data fetched for Members fro te db. Note we have excluded notes
+     *
+     * @param mem : member ID
+     * @return : comma separated list of
      */
+    public String getSpouses(String mem) {
+        return "";
+    }
+
+
+        /**
+         *  the data fetched for Members fro te db. Note we have excluded notes
+         */
     private  String[] memProjn = {MemberTable.COLUMN_ID, MemberTable.COLUMN_FIRST, MemberTable.COLUMN_LAST,
             MemberTable.COLUMN_GENDER, MemberTable.COLUMN_YOB, MemberTable.COLUMN_YOD,
             MemberTable.COLUMN_MY_PAGES, MemberTable.COLUMN_PAR_PAGES};
