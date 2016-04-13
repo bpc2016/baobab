@@ -133,11 +133,11 @@ public class LineageFragment extends Fragment {
                         }
                     }
                     if (i_m < 0 ) { // only one that can be -1
-        Log.d(LOGGER, "not direct siblings! m : " );
+                        Log.d(LOGGER, "not direct siblings! m : ");
                         // try step relations
-        //                String spouses = nm_prev.getSpouses();
+                        //                String spouses = nm_prev.getSpouses();
                         String m_sibs = nmgood.getSiblings();
-        Log.d(LOGGER, "other siblings : " + m_sibs);
+                        Log.d(LOGGER, "other siblings : " + m_sibs);
                         myAr = m_sibs.split(" ");
                         // fix i_m this time ..
                         int m_num = myAr.length;
@@ -147,17 +147,32 @@ public class LineageFragment extends Fragment {
                             }
                         }
 //      return(num + "," + index + "," + T.nodeNames(m));
-                        String t_str = num +","+i_t+","+oTree.nodeNames(nt),
-                                m_str = m_num +","+i_m+","+myTree.nodeNames(nmgood);
-        Log.d(LOGGER, "line_1 data : t = " + t_str +", m= "+m_str);
+                        String t_str = num + "," + i_t + "," + oTree.nodeNames(nt),
+                                m_str = m_num + "," + i_m + "," + myTree.nodeNames(nmgood);
+                        Log.d(LOGGER, "line_1 data : t = " + t_str + ", m  == " + m_str);
                         // still have to decide the order m<t or t<m ? comes from deciding 1st row
-                        String mypages = nm_prev.getMyPages()
-                                ,m_par = nmgood.getPar()
-                                ,t_par = nt.getPar();
+                        String mypages = nm_prev.getMyPages();
+                        String m_par = nmgood.getPar();
+                        String t_par = nt.getPar();
                         myAr = mypages.split(" ");
                         int z_num = myAr.length;
-
-        Log.d(LOGGER, "pages: "+mypages +", t -> "+t_par+", m -> "+m_par +" z_num = "+z_num);
+                        for (int j = 0; j < z_num; j++) {
+                            if (myAr[j].equals(t_par)) {
+                                i_t = j;
+                            }
+                            if (myAr[j].equals(m_par)) {
+                                i_m = j;
+                            }
+                        }
+                        Log.d(LOGGER, "pages: " + mypages + ", t -> " + t_par + ", m -> " + m_par + " z_num = " + z_num);
+                        String encoding = z_num + ",";//L.add(num + "," + index + "," + myTree.nodeNames(m));
+                        // encoding for tree single lines, multiple expandables uses ':'
+                        if (i_t < i_m) {
+                            encoding += i_t + ":" + i_m + "," + oTree.nodeNames(nt_prev) + ":" + myTree.nodeNames(nm_prev);
+                        } else
+                            encoding += i_m + ":" + i_t + "," + myTree.nodeNames(nm_prev) + ":" + oTree.nodeNames(nt_prev); // the default
+                        //mFirstLine.put(nm_src, encoding); // map the path source to encoding for first line
+        Log.d(LOGGER, "encoding = " + encoding);
                     } else { // encode
                         // decide left, right, default is M left, T right
         Log.d(LOGGER, "num, i_m, i_t : " + num + ", " + i_m + ", " + i_t);
