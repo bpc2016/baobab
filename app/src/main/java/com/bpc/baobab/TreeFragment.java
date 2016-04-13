@@ -29,8 +29,8 @@ public class TreeFragment extends Fragment {
     private float Y0 = 30; // depth of row_0
     private float DY = 100; // the vertical spacing between levels
     private float PAD = 50; // 20 left/right margins - modifes WIDTH
-    private float MRS = 20; // 75 minimum regular separation
-    private float MES = 101; // 125  minimum expandable separation
+    private float MRS = 25; // 75 minimum regular separation
+    private float MES = 131; // 125  minimum expandable separation
     private float Y1 = 23; // depth of pendant
     private float Y2 = 32; // depth of pendant
     private float Y3 = 16; // height of line
@@ -90,8 +90,8 @@ public class TreeFragment extends Fragment {
         if (width > 1000) {
             DY = 100 * 2; // the vertical spacing between levels
             PAD = 50 * 2; // left/right margins - modifes WIDTH
-            MRS = 20 * 2; // minimum regular separation
-            MES = 101 * 2; // minimum expandable separation
+            MRS = 25 * 2; // minimum regular separation
+            MES = 131 * 2; // minimum expandable separation
             Y0 = 30 * 2; // depth of pendant
             Y1 = 23 * 2; // depth of pendant
             Y2 = 32 * 2; // depth of pendant
@@ -214,8 +214,6 @@ public class TreeFragment extends Fragment {
                 } else {
                     canvas.drawText(label, x, y + TXY, paint);
                 }
-
-
                 paint.setColor(Color.RED);
                 paint.setStrokeWidth(2 * BW);
                 canvas.drawLine(x - BW, y + BW, x + BW, y + BW, paint);
@@ -326,7 +324,7 @@ public class TreeFragment extends Fragment {
             //are we at the top?
             if (vertices.size() == 1) {
                 Vert V = vertices.get(0);
-                V.x = (LEFT + RIGHT) / 2;
+                left=right=V.x = (LEFT + RIGHT) / 2;
                 labelPos.add(0);
                 return;
             }
@@ -491,7 +489,7 @@ public class TreeFragment extends Fragment {
                 float width = S.getWidth();
                 float Lopt = xs.get(k) - width;
                 lower[k] = L < Lopt ? Lopt : L;
-                L = lower[k] + width + MES;
+                L = lower[k] + width + MES; // MES
             }
             float[] upper = new float[myStrips.size()];
             float R = RIGHT; //-PAD;
@@ -500,7 +498,7 @@ public class TreeFragment extends Fragment {
                 float width = S.getWidth();
                 float Ropt = xs.get(k) + width;
                 upper[k] = R > Ropt ? Ropt : R;
-                R = upper[k] - width - MES;
+                R = upper[k] - width - MES; // MES
             }
             for (int k = 0; k < myStrips.size(); k++) {
                 Strip S = myStrips.get(k);
