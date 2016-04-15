@@ -28,7 +28,7 @@ public class TreeFragment extends Fragment {
     //*********** constants
     private float Y0 = 30; // depth of row_0
     private float DY = 100; // the vertical spacing between levels
-    private float PAD = 50; // 20 left/right margins - modifes WIDTH
+    private float PAD = 40; // 20 left/right margins - modifies WIDTH
     private float MRS = 25; // 75 minimum regular separation
     private float MES = 131; // 125  minimum expandable separation
     private float Y1 = 23; // depth of pendant
@@ -36,9 +36,9 @@ public class TreeFragment extends Fragment {
     private float Y3 = 16; // height of line
     private float TXT = 16; // text size
     private float TXY = 25; // y-offset for writing label
-    private float BW = 5; // half the box width - for teh red box at labelled vertices
+    private float BW = 5; // half the box width - for the red box at labelled vertices
     private float LW = 3; //line width
-    private float CHFACTOR = 3.2f; // factor for decidng text width
+    private float CHFACTOR = 3.2f; // factor for deciding text width
 
     private static final String LOGGER = "bpc_tree"; //Log.d(LOGGER, "page = " + real_id + ", member = " + member_id);
 
@@ -90,7 +90,7 @@ public class TreeFragment extends Fragment {
     private void dimensions(float width) {
         if (width > 1000) {
             DY = 100 * 2; // the vertical spacing between levels
-            PAD = 50 * 2; // left/right margins - modifes WIDTH
+            PAD = 40 * 2; // left/right margins - modifies WIDTH
             MRS = 25 * 2; // minimum regular separation
             MES = 131 * 2; // minimum expandable separation
             Y0 = 30 * 2; // depth of pendant
@@ -99,7 +99,7 @@ public class TreeFragment extends Fragment {
             Y3 = 16 * 2; // height of line
             TXT = 30; // text size
             TXY = 25 * 2; // y-offset for writing label
-            BW = 5 * 2; // half the box width - for teh red box at labelled vertices
+            BW = 5 * 2; // half the box width - for the red box at labelled vertices
             LW = 3 * 2; //line width
             CHFACTOR = 4 * 1.5F;
         }
@@ -192,12 +192,10 @@ public class TreeFragment extends Fragment {
         private float y;
         private float tdx = 0; // text delta-x - how much to shift text in the x-direction
 
-        public Vert() {
-        }
+        public Vert() {}
 
         /**
          * each vertex knows how to draw itself V.draw(canvas)
-         *
          * @param canvas : supplied by the widget onDraw method
          */
         public void draw(Canvas canvas) {
@@ -235,7 +233,6 @@ public class TreeFragment extends Fragment {
         //bounds
         float left = LEFT;
         float right = RIGHT;
-        //x-coordinate above
         float upx = 0; /* x-coordinate we all poiunt up to */
         float y; /* common y-coordinates */
         int level = 0;
@@ -391,9 +388,8 @@ public class TreeFragment extends Fragment {
             }
             return shift / labelPos.size();
         }
-
-
     }
+
 
     public class Rows {
         private ArrayList<Strip> strips = new ArrayList<>(); /* this row's 'vertices' */
@@ -476,7 +472,7 @@ public class TreeFragment extends Fragment {
                     CharSequence lb = V.label;
                     float dx = lb.length()*CHFACTOR;
                     if( V.x-dx < leftBound ){ // only here d we shift the text
-                        V.tdx = leftBound -V.x+dx + PAD/2;
+                        V.tdx = leftBound -V.x+dx + PAD/3;
                     }
                     leftBound = V.x + V.tdx + dx ;
                 }
@@ -509,7 +505,7 @@ public class TreeFragment extends Fragment {
                 float width = S.getWidth();
                 float Lopt = xs.get(k) - width;
                 lower[k] = L < Lopt ? Lopt : L;
-                L = lower[k] + width + MES; // MES
+                L = lower[k] + width + MES;
             }
             float[] upper = new float[myStrips.size()];
             float R = RIGHT; //-PAD;
@@ -518,7 +514,7 @@ public class TreeFragment extends Fragment {
                 float width = S.getWidth();
                 float Ropt = xs.get(k) + width;
                 upper[k] = R > Ropt ? Ropt : R;
-                R = upper[k] - width - MES; // MES
+                R = upper[k] - width - MES;
             }
             for (int k = 0; k < myStrips.size(); k++) {
                 Strip S = myStrips.get(k);
@@ -594,7 +590,6 @@ public class TreeFragment extends Fragment {
             theRows.draw(canvas);
 
         }
-
     }
 }
 
