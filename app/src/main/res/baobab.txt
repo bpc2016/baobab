@@ -1,0 +1,1507 @@
+1~861~570~809 774 573 580
+2~748~656~403
+3~161~54~507 610 323 508
+4~755~81~143 405 338 618 613 340 535 603
+5~616~110~794 259 717 273
+6~579~40~826 243 709
+7~523~75~387 550 609 121 398 598
+8~436~779~676
+9~577~698~345 412 884
+10~395~113~267
+11~341~6~607 516
+12~191~751~716 658
+13~468~777~240
+14~351~92~308 766 647 394 605
+15~220~739~445 137 765
+16~534~697~348 577 666 343 244 541 522
+17~152~834~540 616 838 579 383
+18~735~802~116 309
+19~350~78~635 362 551
+20~299~314~562 788 670 234 300
+21~632~87~210 804
+22~770~288~830 236
+23~773~759~336 859 190
+24~624~342~805
+25~423~732~388 304 367 588 555
+26~659~280~201 164
+27~315~24~763 781 863
+28~606~59~557
+29~485~681~322 290 655
+30~838~36~297 815 441 663 860
+31~437~205~206 372 517 659 378 792
+32~312~135~476 139 685 228 258 136
+33~206~593~263 542 545 664
+34~295~101~807 484 411 746
+35~642~106~434 347
+36~742~57~782 691 449
+37~68~107~642 759 351 391
+38~595~217~397 594 183 592 839 203 436 840
+39~676~83~692
+40~808~74~509 146 481 323 750
+41~437~317~526
+42~208~246~175
+43~551~29~256 373 367 410 717 646
+44~298~2~511 282
+45~203~772~468 703 396 770 688 488
+46~269~222~769 812
+47~180~543~125 163
+48~621~32~418
+49~343~7~824 791
+50~678~62~380 461 373 451 601
+51~676~5~374 662 470
+52~298~1~150 328
+53~338~37~375 560 600 380
+54~808~53~779
+55~686~154~687 120 494 178 188
+56~487~528~311 182 801
+57~357~491~274 455 728 293
+58~748~270~276 277 199 177 1021
+59~619~762~649 620 339 529
+60~289~35~266
+61~849~14~797
+62~324~15~556 870
+63~859~168~608 742 563 463 356 299
+64~850~94~527
+65~190~863~232 841 437 539 849
+66~640~346~302 194 864 392
+67~621~61~162 124
+68~151~715~816
+69~822~66~481
+70~587~97~502 181
+71~725~8~420
+72~688~100~200
+73~464~386~819 384
+74~733~839~221 212 292 624 800 842
+75~600~79~780 481 422
+76~531~744~553 208 684 811 291 810 214 520
+77~195~454~255 729
+78~444~310~213 752 271 447 727 360 528
+79~563~281~799 327 142 689
+80~405~93~827 145 866
+81~602~337~444 717 284
+82~149~160~298 421 275 621 578 730 738
+83~468~546~702 771 128
+84~434~47~944 637
+85~365~65~474
+86~344~257~706 699 707 704
+87~503~574~409 344 614
+88~221~369~790
+89~854~287~852 657 169
+90~294~768~402 693
+91~845~446~523 978 979 313 823 157 470
+92~596~497~753 489 498 865
+93~612~170~242 329 363 871
+94~849~80~814 829 515 538 665
+95~540~131~226 424 566 204 286 400
+96~122~303~575
+97~316~21~589
+98~605~88~180 737 758
+99~336~108~506 817 813
+100~202~332~586 997 1171
+101~301~102~269 361 129 457 747 459
+102~733~103~828
+103~383~96~775 856
+104~122~25~764
+105~230~123~117 993
+106~722~667~719 995 996
+107~336~320~639
+108~785~847~341 196
+109~448~713~126 1036
+110~453~69~599 265 185 482 225 467
+111~225~22~731 690 306 513 521 694 679
+112~316~30~144 220 514
+113~764~675~501 235 115
+114~639~70~714 641
+115~355~31~798
+116~122~846~851 567
+117~624~796~156 653
+118~209~77~358
+119~760~11~755 845 289
+120~756~9~668
+121~601~60~132 138 474 134 334 248 393 853
+122~63~669~617 773 524 725 525
+123~150~84~820 740 440
+124~617~98~253
+125~409~26~674 756 458 784 114
+126~611~376~161 720 533
+127~632~23~477 597 708 366 571 831
+128~122~73~632
+129~355~349~848
+130~186~385~377 480 218 415 638 450 510 806 238
+131~436~55~843
+132~763~362~249 427 155 505
+133~122~89~612
+134~190~41~138 982 1134
+135~580~82~130 576 537 626 778
+136~436~78~355
+137~420~33~166 946 947
+138~809~325~295 217 611 149 808 512
+139~436~91~487
+140~635~90~886 179
+141~253~581~368 686 184 278 324 439
+142~843~43~754 561
+143~842~471~165 837 499
+144~800~237~695 307 636
+145~654~111~404
+146~359~45~867 1066
+147~553~231~627 625
+148~391~27~473 606 530 547 565
+149~313~56~678
+150~364~483~734 654 370 822 382 710
+151~475~223~726 433
+152~488~532~133 167 583
+153~183~651~748 294 718 352 587 371
+154~275~406~151 767 552 711 572
+155~72~105~584 315 1147 1148
+156~355~44~825
+157~421~493~227 279
+158~594~479~215 195 191 671 596 644
+159~336~603~733 122 432 534 364 316 582
+160~859~28~453 186 640
+161~862~723~724 254
+162~232~251~475 464 192 495 176 173 448
+163~621~414~741 331
+164~539~438~230 722 202 193 443 705
+165~617~58~350
+166~308~64~207 301 531 419 268 652 153 189
+167~294~844~466
+168~841~99~622
+169~650~868~850 321 359 602 319
+170~535~615~152 503
+171~573~104~549 353 435 147
+172~804~389~247 379
+173~770~429~648
+174~565~51~367 285
+175~436~67~209 518
+176~599~330~743 629 789 211 264 793 239
+177~352~296~564 623
+178~841~354~862 198 460 407 858
+179~774~3~245 172 171 335
+180~221~305~119 159 786
+181~578~469~519 544 318 262
+182~212~749~757 127 680 413 832
+183~733~260~536
+184~341~283~761 326 417
+185~145~95~548
+186~463~112~141 700
+187~122~48~857
+188~356~252~585 672 233 426
+189~733~224~735 683
+190~840~187~633 395 430 787 721
+191~215~197~661 504
+192~176~712~118 998 1038
+193~525~49~452 229 456 631 967
+194~190~109~381 467 250 1132
+195~294~628~591 818 803
+196~266~472~132
+197~321~584~595 569
+198~473~34~492
+199~157~677~423 634 365 465 478 148
+200~456~16~274 836 357 673
+201~867~85~272
+202~227~696~776 416
+203~589~50~558 462 554 1059 1060 1061 1062
+204~371~12~486 425
+205~608~408~485 261 630 140 490
+206~265~19~855 333 500 390
+207~396~568~795 783 590 158 399 216
+208~527~219~496 785
+209~774~4~604 736 442
+210~292~682~174 660 701
+211~432~559~312 619 431 854
+212~321~869~1143 1144
+213~153~46~
+214~841~945~981
+215~178~821~
+216~492~13~
+217~516~645~
+218~347~18~1058
+219~427~86~
+220~639~745~
+221~465~39~
+222~443~241~1037 1169
+223~614~76~
+224~321~833~
+225~286~401~
+226~560~71~1122 1123 1124 1125 1126 1127 1128 1129 1130 1131
+227~207~38~890 891 892 893 894 895 896 897 898
+228~192~643~
+229~388~428~
+230~148~17~
+231~122~20~
+232~758~52~
+233~706~835~
+234~652~42~914 915 916 917 918 919 920 921 922
+235~422~46~
+236~343~883~882 881
+237~244~880~879 878 877
+238~541~876~875
+239~522~874~873 872
+240~635~887~888
+241~888~889~
+242~891~899~
+243~896~900~
+244~419~901~902 903 904 905 906 907 908 909 910 911 912 913
+245~914~923~
+246~917~924~
+247~766~974~975 1160
+248~249~925~926 927 928 929 930
+249~427~931~932 933 934 935 1167
+250~155~936~937
+251~155~938~939
+252~505~940~941 942
+253~315~943~1005 1149
+254~166~948~949 950 951 952 953 954 955
+255~946~956~
+256~947~957~
+257~229~958~959 960 961
+258~960~962~963 964 965 966
+259~781~968~969 970 971 973 972
+260~394~976~977
+261~610~980~
+262~407~~
+263~407~985~990
+264~460~992~991
+265~174~986~1011 1182 1183
+266~193~987~994 1168
+267~988~1023~749 1024 1025
+268~757~989~1009 1101 1159
+269~672~999~1030 1031
+270~562~1000~
+271~630~1001~
+272~199~1002~
+273~511~1003~1010
+274~519~1004~1013 1014
+275~1005~1007~1006 1008 1174
+276~857~~
+277~318~1012~
+278~1015~1193~471
+279~185~1016~1017 1018 1019 1020
+280~127~1022~1102 1178
+281~680~1157~1158
+282~413~~
+283~1026~1027~989
+284~233~1028~1029
+287~832~~
+289~624~1041~1042
+290~733~1043~1044
+291~1045~1046~1047 834 1048 1049
+293~1047~1052~
+294~1024~1053~1054 1055
+295~858~1056~
+296~766~1057~
+297~741~1109~1063 1064
+298~746~1065~
+299~1066~1067~
+300~484~1095~1068 1069 1070 1071 1072 1073
+301~717~1085~1074 1075 1076 1077 1078 1079 1080 1081 1082 1083 1084
+302~213~1087~1086 1088 1089 1090 1091
+303~484~1096~1098 1099 1100
+304~1079~1103~
+307~146~1110~1111 1112 1113 1114 1115
+308~1111~1117~1116
+309~1111~1118~1120
+310~1112~~1121
+311~190~1133~1135
+312~467~1136~1137 1138
+313~467~1140~1141 1142
+314~1143~1145~1146
+315~1149~1151~1152 1153 1154
+316~644~1155~1156
+317~975~1161~1162 1163 1164
+318~212~1165~
+319~1068~1166~
+320~582~~
+321~705~~
+322~705~1170~
+323~1070~~
+324~1070~1172~
+325~557~~
+326~557~~
+327~548~~
+328~548~1175~
+329~701~1177~
+330~1179~1180~1022
+331~1159~~
+332~660~1181~
+333~159~1184~1185
+334~695~1186~
+335~240~1187~1188
+336~1165~1189~1190
+337~1165~1191~1192
+338~819~1194~
+
+1~??~?1~19??~~F~52~~52~
+2~Memeza~Alice~19??~19??~F~44~~44~
+3~??~?3~19??~~F~179~~179~
+4~??~?4~19??~~F~209~~209~
+5~??~?5~19??~~M~51~~51~
+6~??~?6~19??~~M~11~~11~
+7~??~?7~19??~~M~49~~49~
+8~Themba~Samson~18??~19??~M~71~~71~
+9~??~?9~19??~~M~120~~120~
+10~??~??~19??~~F~~~~
+11~??~??~18??~~F~119~~119~
+12~Banda~??~19??~~F~204~~204~
+13~Chalira~??~19??~~F~216~~216~
+14~Chande~??~19??~~F~61~~61~
+15~Chande~??~19??~~M~62~~62~
+16~Chin\'gomanje~?? Chapuchapu~19??~~M~200~~200~
+17~Chembe~??~19??~~M~230~~230~
+18~Chikoya~Alexander~19??~~M~218~~218~
+19~Chimpango~??~19??~19??~M~206~~206~
+20~Chinthiti~??~19??~~M~231~~231~
+21~Chioko~??~19??~~M~97~~97~
+22~Chirambo~??~19??~~M~111~~111~
+23~Chirwa~??~19??~~M~127~~127~
+24~Chisasa~Ndimbe~18??~19??~M~27~~27~
+25~Chithila~Georga~19??~~M~104~~104~
+26~Chiwiya~??~1939~~M~125~~125~
+27~Chiwiya~Nathaniel Leo Manning~19??~~M~148~~148~
+28~Chizoma~??~19??~~F~160~~160~
+29~Chuza~Wallace~1928~1985~M~43~~43~
+30~Dewasi~??~19??~~M~112~~112~
+31~Ganiza~??~19??~~M~115~~115~
+32~Gondwe~??~194?~~M~48~~48~
+33~Kabefu~Dennis~19??~~M~137~~137~
+34~Kabutu~??~19??~~M~198~~198~
+35~Kachiwanda/Matuta~??~18??~19??~M~60~~60~
+36~Kadango~??~19??~~M~30~~30~
+37~Kalimba/Chilinkhwambe~??~18??~19??~M~53~~53~
+38~Kaluwayo~Ambrose Raphael~1919~~M~227~~227~
+39~Kamalonda/Chilambula~??~19??~~M~221~~221~
+40~Kamoto~??~19??~~M~6~~6~
+41~Kapondera~??~19??~~F~134~~134~
+42~Kathingo~Martin~19??~~M~234~~234~
+43~Katumbi~??~19??~~M~142~~142~
+44~Kayira~??~19??~~M~156~~156~
+45~Komakoma~??~19??~~M~146~~146~
+46~Kumpolota~??~19??~~M~235~~235~
+47~Lijabu~Sylivia Matilda~19??~~F~84~~84~
+48~Lingawo~Richard~19??~19??~M~187~~187~
+49~Liyama~Guy~19??~~M~193~~193~
+50~Magesi~Damiano~19??~~M~203~~203~
+51~Makala~??~19??~~M~174~~174~
+52~Makomera~??~19??~~M~232~~232~
+53~Malibisa~??~19??~~F~54~~54~
+54~Malikita~??~19??~~F~3~~3~
+55~Malizeni~??~19??~~M~131~~131~
+56~Malizeni/Chupa~??~19??~~M~149~~149~
+57~Mapemba~??~19??~~M~36~~36~
+58~Masasa~??~19??~~M~165~~165~
+59~Masoambewe~??~19??~~M~28~~28~
+60~Mbawala~??~19??~~M~121~~121~
+61~Mbewe~??~19??~~M~67~~67~
+62~Mbila~??~19??~19??~M~50~~50~
+63~Mbira/Chirwa~??~18??~19??~M~122~~122~Feb 07&nbsp; Mtengula connectins here ...Kurare &gt; Liyama; ChapuchapuRachel &gt; Themba; Kabefu (ASimeoni) etc.
+64~Mbuluma~John~19??~~M~166~~166~
+65~Mbuna~??~19??~~M~85~~85~
+66~Mdoe~??~19??~~M~69~~69~
+67~Mkandawire~??~19??~~M~175~~175~
+68~Mkoko~??~18??~~M~37~~37~
+69~Mtaya~??~19??~~F~110~~110~
+70~Mtombosola~??~1963~~F~114~~114~
+71~Mtunda~John~1934~2008~M~226~~226~
+72~Kazembe~Achimwa Anjowela Mudyawanthu~18??~19??~M~155~~155~This is the topmost link with the other families in Chinyanya  through Elizabeth come the Mnyengas; the Chisasas; while Mariam is the source o fthe Kaundas.
+73~Mwalabu~Samuel~19??~19??~M~128~~128~
+74~Mwase~Helen~191?~1945~F~40~~40~
+75~Mwasi/Kawelama~??~18??~19??~M~7~~7~
+76~Mwenelupembe~??~1950~~M~223~~223~
+77~Mzaliwa~??~19??~~M~118~~118~
+78~Ndalama~?? Sauli~19??~~M~~~~
+79~Ngwemba~??~19??~~M~75~~75~
+80~Njakale~Cecilia~195?~~F~94~~94~
+81~Nkhoma~??~18??~19??~M~4~~4~
+82~Nyirenda~??~?~19??~M~135~~135~
+83~Phiri~??~19??~~M~39~~39~
+84~Phiri~Ronald~??~19??~M~123~~123~
+85~Rubadiri~??~19??~~M~201~~201~
+86~Saidi~??~19??~~F~219~~219~
+87~Sauli~??~19??~~M~21~~21~
+88~Tausi/Kalupo~??~19??~~M~98~~98~
+89~Tawe~Samuel~19??~19??~M~133~~133~
+90~Thindwa~Ellarton~19??~~M~140~~140~
+91~Thole~Kelvin~1938~1990~M~139~~139~
+92~Chisoti Thundu~Daniel~19??~~M~14~~14~
+93~Vundika~??~19??~~M~80~~80~
+94~Yegama~??~18??~19??~M~64~~64~
+95~??~?A~19??~~F~185~~185~
+96~??~?B~19??~~F~103~~103~
+97~??~?C~19??~~F~70~~70~
+98~Mapiko~?Chitenje Chalunda~19??~~M~124~~124~
+99~??~?D~19??~~F~168~~168~
+100~??~?E~19??~~F~72~~72~
+101~??~Enet~19??~19??~F~34~~34~
+102~??~?G~19??~~F~101~~101~
+103~??~?H~19??~~F~102~~102~
+104~??~?I~19??~~F~171~~171~
+105~??~Rebecca~19??~~F~155~~155~
+106~Kumalembe~Catherine~19??~~F~35~~35~
+107~Kulandani~?L~18??~~F~37~~37~
+108~??~?M~19??~~F~99~~99~
+109~Kampatula~Lois~1927~2006~F~194~~194~
+110~??~?O~19??~~F~5~~5~
+111~??~?P~19??~~F~145~~145~
+112~??~?Q~19??~~F~186~~186~
+113~??~?a~19??~~M~10~~10~
+114~Chiwiya~Zikomo~19??~~F~~125~~
+115~Chirwa~Abel~1998~~M~~113~~
+116~Chisala~Abel Upile~1991~~M~~18~~
+117~Masi~Abigail~1999~~F~~105~~
+118~Kangunga~Abwino Bill~2001~~M~~192~~
+119~Masambo~Adija Wesa Jasinta~1983~~F~~180~~
+120~Chitenje~Agatha~19??~~F~~55~~
+121~Mwasi/Kawelama~Agnes~19??~~F~~7~~
+122~Chisala~Agnes~1933~~F~128 96 116 133 187 104 231~159~128~
+123~Mangulama~Agnes~197?~~F~105~~105~
+124~Mbewe~Akuloya~1980~~M~~67~~
+125~Tausi~Akuzike~1988~~F~~47~~
+126~Chisala~Akuzike Ivan~2001~~M~~109~~
+127~Chisala~Akuzike Nyalele~1984~~F~280~182~280~Born May 6th 1984 in Oakland; California. Now (Mar '09) lives in Texas. see 'page' for a bit ...
+128~Chikoti~Akuzike Takondwa~1993~~F~~83~~
+129~Mbuluma~Alafia~1964~1996~F~~101~~
+130~Nyirenda~Ales~19??~~F~~135~~
+131~Mapira~Alex~19??~~M~95~~95~
+132~Saidi~Alexander~19??~~M~~196~~
+133~Tawe~Alfred~1988~~M~~152~~
+134~Mbawala~Alfred~19??~~M~~121~~
+135~Maele~Ali~195?~2015~M~32~~32~
+136~Maele~Alice~1989~~F~~32~~
+137~Mpanda~Alice~1992~~F~~15~~
+138~Chisala~Alice~19??~~F~~134~~
+139~Maele~Alick~1979~~M~~32~~
+140~Chisala~Alinafe~1982~~F~~205~~
+141~Chisala~Alison~1980~~F~~186~~
+142~Chidumu~Allan~1984~~M~~79~~
+143~Nkhoma~Andrea~18??~~M~~4~~
+144~Dewasi~Andrea~19??~2006~M~~112~~
+145~Vundika~Andrea~19??~~M~185~80~185~
+146~Moyo~Andrew~1945~~M~307~40~307~
+147~Mtawale~Andrina~19??~~F~~171~~
+148~Njewa~Angela~19??~~F~230~199~230~
+149~Mtawale~Angelina Dinah~19??~19??~F~82~138~82~
+150~Chiponda~Angeline~1969~2006~F~123~52~123~
+151~Chiponda~Angeline~1971~~F~68~154~68~
+152~Chigowo~Ann~19??~19??~F~17~170~17~
+153~Mbuluma~Anna~19??~~F~~166~~
+154~Chikoko~Annabelle~19??~~F~55~~55~
+155~Chisasa~Annah~1955~~F~250 251~132~250~
+156~Chisala~Anne Khataza~1986~~F~~117~~
+157~Kaunda~Annette~19??~~F~199~91~199~
+158~Chizara~Annie~1988~~F~~207~~
+159~Masambo~Anusa Atupele William Barnabas~1983~~M~333~180~~
+160~Banda~Arthur A. Chiponda~19??~~M~82~~82~
+161~Chiwiya~Arthur G.~1927~1996~M~3~126~3~
+162~Mbewe~Asani~1975~~M~~67~~
+163~Tausi~Asante~1990~~F~~47~~
+164~Mzokomera~Asante~2002~~F~~26~~
+165~Kamkwalala~Asante Rochelle~1987~~F~~143~~
+166~Kabefu~Marjery (asimeoni)~1937~~F~254~137~254~June 04  met this lady at Mbamba: she is one of the 'chitukuko cha azmai' setup there; runs local restaurant that is highly (over?)rated and together with her cousin(?) Lilly Mchosa; nee Liyama.
+167~Tawe~Attlee~1988~~M~~152~~
+168~Chilongozi~Audrey~19??~2000~F~63~~63~Mar 09  I believe this name was obtained from the Chizoma who is a teacher on the iland  perhaps obtained in 2006
+169~Chisala~Augustine Khama~2000~~M~~89~~
+170~Chikukula~Austin~1963~~M~93~~93~
+171~Mtawale~Ayaco~19??~~F~~179~~
+172~Mtawale~Ayela~19??~~F~~179~~
+173~Chisala~Baado Eliza Judith~1971~~F~~162~~
+174~Chisala~Bahati~1978~~F~265~210~265~070204: Grand wedding in 2006; spilled over to traditional one in Dumbo Lemani&39;s home town of Thondwe; also  home of the Masi&39;s 070804: Viola here! Rehema Sitinga born July 11th in Columbia Maryland ; grandma Nkhulindachi in attendace
+175~Matovu~Bahati~1993~~F~~42~~
+176~Chisala~Bahati Joanne Vivian~1971~~F~192~162~192~
+177~Kapangama~Barbara~19??~~F~~58~~
+178~Chitenje~Barbara~19??~~F~215~55~215~
+179~Thindwa~Barnabas~19??~~M~~140~~
+180~Tausi~Barnabas~1960~~M~47~98~47~
+181~Kaunda~Barry~1993~~M~~70~~
+182~Longwe~Barry Gomezgeka~1988~~M~~56~~
+183~Kaunda~Barry~1924~1986~M~153~38~153~
+184~Chitenje/Mbira~Beatrice~192?~~F~~141~~
+185~Chisala~Beatrice~19??~~F~279~110~279~some remark here  this information comes from Torbitgiven in Mzuzu  15th Nov 2007&nbsp;
+186~Chisala~Beatrice~1939~1979~F~130~160~130~
+187~Miti~Beatrice~1948~~F~190~~190~
+188~Chitenje~Benedict~1963~~M~~55~~
+189~Mbuluma/Mbozo~Benedict~19??~~M~~166~~
+190~Chisala~Beniah Bluegum~1907~1986~M~65 194 134 311~23~65~
+191~Kaunda~Benjamin Themba~1953~1987~M~12~158~12~
+192~Chisala~Bennaeah Lancelot~1965~~M~228~162~228~
+193~Masi~Bernard~1977~~M~266~164~266~
+194~Chisala~Bernard Kelvin~1971~~M~~66~~
+195~Kaunda~Bernice Kwanji~1952~~F~77~158~77~
+196~Salima~Bertrand Clement~1956~19??~M~~108~~
+197~Mmembe~Betram~1950~~M~191~~191~
+198~Chisala~Betty Medelina~1970~~F~~178~~
+199~Kapangama~Betty~1975~~F~272~58~272~
+200~Chikoti~Betty~1985~~F~~72~~
+201~Mzokomera~Betty~1998~~F~~26~~
+202~Masi~Betty~1975~~F~100~164~100~
+203~Kaunda~Betty Susan~1935~2012~F~45~38~45~(20130923)  lived most of her life in Dar. laid to rest there
+204~Mapira~Billy~19??~~M~~95~~
+205~Chikoti~Blandina~19??~~F~31~~31~
+206~Chisala~Blandina~1964~2003~F~33~31~33~
+207~Mbuluma~Sebra Brenda~1931~~F~227~166~227~
+208~Mbuluma~Brenda~1970~~F~42~76~42~
+209~Mkandawire~Bridgite~1967~~F~118~175~118~
+210~Sauli~Brighton~1972~~M~~21~~
+211~Chalira~Buchizga~19??~~F~~176~~
+212~Chisala~Busiso Pascal Barnabas~1955~~M~182 318~74~182~(2016-02-08)  renewed version ready for deployment. this one has an embedded dB and ui enhancements!##(2013-09-14)  Finally have this app on my device. Almost fully functional. Date as indicated##May 2004: mathematician at Chancellor College zomba. Later moved to Lilongwe (06) then onto Mzuzu University (07)
+213~Longwe~Bwanali Nackson~1933~2009~M~302~78~302~
+214~Mbuluma~Caroline~1979~~F~~76~~
+215~Kaunda~Caroline MamuhauPelo~1950~~F~191~158~191~
+216~Chizara~Carrie~19??~~F~~207~~
+217~Mtawale~Carrie Manyeta~1901~1953~F~38~138~38~
+218~Kayuza~Catherine~1957~~F~~130~~
+219~??~Catherine~19??~~F~208~~208~
+220~Dewasi~Catherine~1970~~F~15~112~15~
+221~Chisala~Catherine Florence~1953~~F~88 180~74~180~May 2004: avid member of PPM and the mgwirizano coalition
+222~Kumpolota~Catherine~19??~~F~46~~46~
+223~Viyazyi~Catherine~1969~~F~151~~151~
+224~Zgambo~Catherine~1945~~F~189~~189~
+225~Chisala~Cecilia~19??~~F~111~110~111~
+226~Mapira~Sacha~19??~~M~~95~~
+227~Chiponda~Charity Felestus~1962~2003~F~202~157~202~
+228~Maele~Charles~1983~~M~~32~~
+229~Liyama~Charles~19??~~M~257~193~257~
+230~Masi~Charles~1971~~M~105~164~105~
+231~Phiri~Charles~1958~1997~M~147~~147~
+232~Chisala~Chauncy~1933~~M~162~65~162~
+233~Chisala~Chifundo~1982~~F~284~188~284~
+234~Chisala~Chikondano~19??~~F~~20~~
+235~Chirwa~Chikondi Caroline~1995~~F~~113~~
+236~Chikoti~Chikumbutso John~1991~~M~~22~~
+237~Mbvundula~Chikweza Richard~1960~1997~M~144~~144~
+238~Kayuza~Chimwemwe~1969~~F~~130~~
+239~Chalira~Chimwemwe~19??~~F~~176~~
+240~Chikoti~Chimwemwe Christopher~1980~~M~335~13~~
+241~Magalasi~Chimwemwe~197?~~M~222~~222~
+242~Chikukula~Chiseko~1990~~F~~93~~
+243~Kamoto~Chisoni~19??~~F~~6~~
+244~Msowoya~Chrissie~1970~~F~237~16~237~
+245~Mtawale~Christabela~19??~~F~~179~~
+246~Matovu~Christian~1959~~M~42~~42~
+247~Phiri~Christopher~1992~~M~~172~~
+248~Mbawala~Christopher~19??~~M~~121~~
+249~Chisasa~Colles~1943~1993~M~248~132~248~
+250~Chisala~Sarai~1968~1979~F~~194~~
+251~Ndulilo~Constance~1935~2015~F~162~~162~died in Mzuzu, suddenly. heart failure? buried in musongwe
+252~Ndau~Constane~19??~~F~188~~188~
+253~Chitenje/Mbira~Constantin~19??~19??~M~141~124~141~
+254~Matinga~Crispin~1995~~M~~161~~
+255~McKenzie~Crystal~1987~~F~~77~~
+256~Chuza~Cuthbert~1943~~M~~43~~
+257~Mede~Cuthbert~1943~~M~86~~86~
+258~Maele~Cynthia~1985~~F~~32~~
+259~Chitowe~Daisy~19??~2004~F~~5~~
+260~Kanje~Daisy Enifa~1944~1995~F~183~~183~
+261~Chisala~Madalitso~1974~~F~~205~~
+262~Zabula~Dalitso~1981~~M~~181~~
+263~Kanyinji~Dalitso~1989~~F~~33~~
+264~Chalira~Dalitso~19??~~F~~176~~
+265~Chisala~Damilesi~19??~~F~206~110~206~
+266~Kachiwanda~Damilesi~19??~~F~196~60~196~
+267~??~Daniel~1999~~M~~10~~
+268~Mbuluma/Mbozo~Daniel~1940~1945~M~~166~~
+269~Mbuluma~Daniel Akuzike~1960~~M~46~101~46~
+270~Kapangama~Davis~19??~~M~58~~58~
+271~Longwe~Danny~1947~~M~~78~~
+272~Rubadiri~David~192?~~M~~201~~
+273~Chitowe~Davie~19??~~M~~5~~
+274~Chin\'gomanje~Davis Gift~19??~~M~~200~~
+275~Chiponda~Davis Thomas~1942~~M~154~82~154~
+276~Kapangama~Davison Zitole~1972~~M~~58~~
+277~Kapangama~Denise~1973~~F~~58~~
+278~Chitenje/Mbira~Dennis~192?~~M~~141~~
+279~Phiri~Dennis~1964~~M~~157~~
+280~Mzokomera~Dennis~1972~~M~26~~26~
+281~Chidumu~Dezidelio Justin~19??~~M~79~~79~
+282~Chiponda~Dinah~1982~~F~~44~~
+283~Botomani~Dismus Damian~1943~~M~184~~184~
+284~Longwe~Domina~19??~~F~~81~~
+285~Makala~Dora~19??~~F~~174~~
+286~Mapira~Doreen~19??~~F~225~95~225~
+287~Chiphwanya~Dorica~1968~~F~89~~89~
+288~Kadzamira~Doris~196?~~F~22~~22~
+289~??~Dorothea Mpenya~18??~19??~F~60~119~60~
+290~Chinseu~Dorothy~1998~~F~~29~~
+291~Mbuluma~Dumisani~1976~~M~~76~~
+292~Chisala~Dumisani Peter Henry~1955~~M~210~74~210~June 2004: Business 'magnet' of Chemicals & Co;   etc. etc.
+293~Chapuchapu~Dunlod~19??~~M~~57~~
+294~Kaunda~Edgar Arthur~1952~~M~195 90 167~153~195~
+295~Mtawale~Edgar Green~1898~1981~M~34~138~34~
+296~Akimu~Edison~19??~~M~177~~177~
+297~Kadango~Edward~19??~~M~~30~~
+298~Chiponda~Edward Arthur~1934~1990~M~52 44~82~52~Mar 09  Thanks again to Geni!
+299~Chisala~Edward~1958~~M~20~63~20~
+300~Chisala~Edward Jacob~1993~~M~~20~~
+301~Mbuluma~Edward~1934~1987~M~101~166~101~
+302~Chisala~Edward Michael~1968~~M~~66~~
+303~Mwasi~Edward~19??~~M~96~~96~
+304~Ndilowe~Edward~1958~1990~M~~25~~
+305~Masambo~Edwin Rabbi William~1948~2012~M~180~~180~
+306~Chirambo~Eflida~19??~~F~~111~~
+307~Mbvundula~Ekari~1987~~F~~144~~
+308~Thundu~Elfrida~19??~19??~F~166~14~166~
+309~Chisala~Elijah Khumbo~1997~~M~~18~~
+310~Phiri~Elinat~1913~~F~78~~78~
+311~Longwe~Elinat Slyvia~1985~~F~~56~~
+312~Chisala~Eliza~195?~~F~32~211~32~
+313~Kaunda~Eliza~19??~~F~149~91~149~
+314~Mkanda~Elizabeth~19??~~F~20~~20~
+315~Kazembe~Elizabeth Mudyawanthu~18??~19??~F~27 253~155~27~
+316~Chisala~Ellis~1942~~F~112 97~159~112~
+317~Uledi~Ellis~19??~~F~41~~41~
+318~Zabula~Aylwin Peyani~1979~~M~277~181~277~070804: Married July 28th 2007 in BT; Werani is daughter of Mzondi!
+319~Kaunda~Emani~19??~~F~~169~~
+320~Kadunya~Emiand~19??~~F~107~~107~
+321~Kaunda~Emilius Mtunthama~18??~19??~M~197 212 224~169~197~Feb 07 From the Likoma perspective; this must be the source of the 'Mtunthama' name attached to these Kaundas  e.g. up to now; Hetty Kaunda referred to locally as Mtunthama. THis Kaunda from Bwerero; NB. Moved to Likoma at some point to marry Mariam of Chinyanya; the Mudyawanthus.
+322~Chinseu~Emily~1995~~F~~29~~
+323~Mtawale~Emily~19??~~F~~40~~
+324~Chitenje~Emily~1927~~F~62~141~62~
+325~Nyalongwe~Emily~18??~19??~F~138~~138~
+326~Botomani~Emily Nyanjikho~1980~~F~~184~~
+327~Chidumu~Emma~1981~~F~~79~~
+328~Chiponda~Emmanuel~1970~1975~M~~52~~
+329~Chikukula~Emmanuel~1993~~M~~93~~
+330~Chalira~Emmanuel~1949~~M~176~~176~
+331~Chirwa~Enida~1970~~F~~163~~
+332~Chinyamunyamu~Enock~19??~~M~100~~100~
+333~Chimpango~Ernest John Dickson~19??~~M~~206~~
+334~Mbawala~Esau~19??~~M~~121~~
+335~Mtawale~Esau~19??~~M~~179~~
+336~Chisala~Esau~1903~1962~M~159 107 99~23~159~
+337~Longwe~Esau~19??~~M~81~~81~
+338~Nkhoma~Esmeni~18??~19??~F~53~4~53~
+339~Chisala~Esther~1990~~F~~59~~
+340~Nkhoma~Esther~19??~~F~~4~~
+341~Salima~Esther Chechi~1954~~F~184 11~108~184~
+342~Lwanda~Esther~196?~1997~F~24~~24~
+343~Msowoya~Esther~1966~2000~F~49 236~16~49~
+344~Mwasi~Esther~1943~2009~F~86~87~86~Mar 09: Esther died very unexpectedly on 7th February 2009; in Lilongwe; Laid to rest at the church cemetery  St Peters.Luckily son Paschal was able to attend the funeral. Sadly missed for all her energy and zeal.
+345~Nkhoma~Estnat~1985~~F~~9~~
+346~Sinalo~Ethel~1946~~F~66~~66~
+347~Mkoko~Eunice~19??~~F~218~35~218~
+348~Msowoya~Evans~1961~~M~~16~~
+349~Matinga~Evans~19??~200?~M~129~~129~A priest in Malosa; Chanco graduate. Buried in Machinga; A relative of the Matinga that is married to Zaida Chisala (Vincent)
+350~Masasa~Evelina~19??~~F~19~165~19~Feb 07 daughters  Messalina &gt; Thindwas; Flower &gt; Chisasas; Loise &gt; Chuzas
+351~Mkoko~Evelyn Kutuwa~19??~19??~F~14~37~14~Jun 04 Source of the Mbuluma and Tauzi line of Mkokos;
+352~Kaunda~Evelyn Ntakayao~1957~2005~F~177~153~177~
+353~Mtawale~Evis~19??~~M~~171~~
+354~Mwapi~Faith~1947~~F~178~~178~
+355~Ndalama~Felestus~1965~2009~F~115 156 129~136~115~Mar 09  Felly died in Lilongwe March 20th 2009. At the time; she was married to priest Mponda of St.Thomas. Laid to rest in Misesa; Blantyre.
+356~Chisala~Filipo~1955~~M~188~63~188~
+357~Chapuchapu~Filippo~1958~~M~57~200~57~
+358~Mzaliwa~Fiskani~1988~~F~~118~~
+359~Kaunda~Flora~18??~19??~F~146~169~146~
+360~Longwe~Florence~1954~~F~~78~~
+361~Mbuluma~Florence Mtendere~1962~~F~~101~~
+362~Ndalama~Flower~1919~2005~F~132~19~132~
+363~Chikukula~Forbes~1996~~M~~93~~
+364~Chisala~Forbes~1935~2004~M~150~159~150~Feb 07 Lived most of his life in 'Ilala'; DaresSalaam. Died there. Wife died shortly afterwards; after coming to Likoma kuka pereka maliro & falling victim to malaria
+365~Njewa~Foster~19??~~F~85~199~85~
+366~Chirwa~Francis~1990~~M~~127~~
+367~Makala~Francis~1948~~M~~174~~
+368~Chitenje/Mbira~Francis~19??~~M~~141~~
+369~Chilalika~Francis~1952~~M~88~~88~
+370~Chisala~Francis Ernest~1965~~M~~150~~
+371~Kaunda~Francis~1963~~M~204~153~204~
+372~Chisala~Frank~1966~~M~~31~~
+373~Mbila~Frank~1944~~M~~50~~
+374~??~Fwembe~1976~~M~~51~~
+375~Kalimba/Chilinkhwambe~Geoffrey~19??~~M~~53~~
+376~Chiwiya~Geoffrey S.~19??~19??~M~~~~
+377~Kayuza~George~1951~~M~~130~~
+378~Chisala~George~1975~~M~~31~~
+379~Phiri~George~1997~~M~~172~~
+380~Kalimba/Chilinkhwambe~George~19??~~M~~53~~
+381~Chisala~George~19??~~M~~194~~
+382~Chisala~George Akuzike~1974~~M~~150~~
+383~Chitowe~George~1959~~M~103~17~103~
+384~Kazembe~George Jnr.~1991~~M~~73~~
+385~Kayuza~George~19??~19??~M~130~~130~
+386~Kazembe~George~1958~~M~73~~73~
+387~Mwasi/Kawelama~George Mkwemete~19??~~M~~7~~
+388~Ndilowe~George~1956~2001~M~229~25~229~
+389~Phiri~George~1971~~M~172~~172~
+390~Chimpango~Georgina~19??~~F~~206~~
+391~Mkoko~Georgina Kalonga~19??~19??~F~148~37~148~Jun 04  grandmother to Makala; her daughter is a main source here
+392~Chisala~Gerald Ivani~1973~~M~~66~~
+393~Mbawala~Gertrude~19??~~F~~121~~
+394~Chisoti~Gertrude~19??~~F~260~14~260~
+395~Chimwemwe~Gertrude~1976~~F~10~190~10~
+396~Chikoti~Gertrude Elizabeth~1956~~F~207~45~207~
+397~Kaunda~Gertrude Evelyn~1920~19??~F~~38~~
+398~Mwasi/Kawelama~Geston~19??~~M~~7~~
+399~Chizara~Getrude~199?~~F~~207~~
+400~Mapira~Gift~19??~~F~~95~~
+401~Wanda~Gift~19??~~M~225~~225~
+402~Kaunda~Gisela Upendo~1990~~F~~90~~
+403~Kafandikhale~Gladson~1989~~M~~2~~
+404~Chisala~Gladys~19??~~F~~145~~
+405~Nkhoma~Gladys~18??~~F~80~4~80~
+406~Roberts~Gladys~1947~~F~154~~154~
+407~Chisala~Gloria Lucy~1975~~F~263~178~263~
+408~Mpeta~Gloria~19??~2008~F~205~~205~
+409~Mwasi~Gloria~1941~2015~F~125~87~125~
+410~Chuza~Godswill~1953~~M~~43~~
+411~Mtawale~Golden Jubilee~19??~~M~~34~~
+412~Nkhoma~Gomezgani~1987~2001~M~~9~~
+413~Chisala~Gomezgeka Wiza Lawrence~1991~~M~282~182~282~Born at Periranyatwa Hospital in Harare. Welcomed by his uncle; dad away in Maputo.
+414~Chirwa~Good~194?~~M~163~~163~
+415~Kayuza~Grace~1959~~F~~130~~
+416~Bere~Grace~1980~~F~~202~~
+417~Botomani~Grace~1983~~F~~184~~
+418~Gondwe~Grace~1985~~F~~48~~
+419~Mbuluma~Grace~1937~~F~244~166~244~
+420~Themba~Grace~1914~1996~F~137~71~137~June 04  I suspect this is the 'asimeoni' that I once saw at Mtengula  died before the previous (98) visit
+421~Chiponda~Grace~1938~1974~F~157~82~157~
+422~Ngwemba~Grace~19??~~F~235~75~235~
+423~Njewa~Grace~19??~~F~25~199~25~
+424~Mapira~Gwemi~19??~~F~~95~~
+425~Kaunda~Haroon~19??~~M~~204~~
+426~Chisala~Harry~1987~~M~~188~~
+427~Chisasa~Harry~1945~~M~219 249~132~219~
+428~Masamba~Hawa~195?~~F~229~~229~
+429~Gondwe~Helen~196?~~F~173~~173~
+430~Kaunda~Helen Kwanjiwah~1979~~F~~190~~
+431~Chisala~Henry~1960~20??~M~~211~~
+432~Chisala~Henry~1929~1973~M~211~159~211~Feb 07 : Llived largely in Lusaka Zambia where he died.
+433~Chisala~Herbert~1999~~M~~151~~
+434~Mkoko~Douglas~190?~~M~84~35~84~
+435~Mtawale~Herena~19??~~F~~171~~
+436~Kaunda~Hetty~1938~2011~F~139 136 8 131 175~38~139~
+437~Chisala~Hinto~1940~1988~M~31 41~65~31~
+438~Masi~Hodges~19??~~M~164~~164~
+439~Chitenje/Mbira~Horace~19??~~M~~141~~
+440~Phiri~Hudson~1989~~M~~123~~
+441~Kadango~Ibo~19??~~M~~30~~
+442~Mtawale~Irene~19??~~F~~209~~
+443~Masi~Irene~1977~~F~222~164~222~
+444~Longwe~Isaac~1905~1971~M~78~81~78~
+445~Mpanda~Ishmael~1989~~M~~15~~
+446~Kaunda~Isiah~18??~19??~M~91~~91~
+447~Longwe~Issac~1950~~M~~78~~
+448~Chisala~Ivan Dangalila~1973~~M~109~162~109~
+449~Mapemba~Jackson~19??~~M~~36~~
+450~Kayuza~James~1963~2004~M~~130~~
+451~Mbila~James~19??~~M~~50~~
+452~Liyama~James~19??~~M~~193~~
+453~Chisala~James~19??~19??~M~110~160~110~
+454~McKenzie~James~1954~~M~77~~77~
+455~Chapuchapu~Jane~19??~~F~~57~~
+456~Liyama~Jane~19??~~F~200~193~200~
+457~Mbuluma~Jane Nzeru~1967~~F~~101~~
+458~Chiwiya~Janet~19??~~F~~125~~(20151012)  ndapata 93, wisdom, cleverson, anna. nkhwazi
+459~Mbuluma~Janet Chiwawa~1971~~F~~101~~
+460~Chisala~Jennifer Charity~1973~~F~264~178~264~
+461~Mbila~Jennifer~19??~~F~~50~~
+462~Magesi~Jennifer~19??~~F~~203~~
+463~Chisala~Jerome~195?~~M~186~63~186~
+464~Chisala~Jessica Betty~1961~~F~73~162~73~
+465~Njewa~Joanna~19??~~F~221~199~221~
+466~Kaunda~Jocelyn~198?~~F~~167~~
+467~Chisala~John~1965~~M~312 313~194~312~
+468~Chikoti~John Samuel~1952~2015~M~83 13~45~83~
+469~Zabula~John~194?~1994~M~181~~181~
+470~Kaunda~Jonathan~19??~~M~~91~~
+471~Kamkwalala~Jonathan Stevenson~1958~~M~143~278~143~
+472~Saidi~Jonathan~19??~~M~196~~196~
+473~Chiwiya~Josaline~19??~~F~198~148~198~
+474~Mbawala~Joseph~19??~~M~~121~~
+475~Chisala~Joseph Bernard~1960~~M~151~162~151~
+476~Maele~Joseph Boniface~1977~~M~~32~~
+477~Chirwa~Josephine~1980~~F~~127~~
+478~Njewa/Choko~Joshua~19??~~M~~199~~
+479~Shaku~Josina Ngwanakone~1923~2011~F~158~~158~
+480~Kayuza~Joyce~1956~~F~~130~~
+481~Ngwemba~Joyce~194?~2015~F~~75~~(20151007)  owner of Kayesa Lodge in Mchinji. married a Norwegian, died suddenly
+482~Chisala~Joyce~19??~~F~~110~~
+483~Chime~Joyce~19??~2004~F~150~~150~
+484~Mtawale~Joyce Chimwemwe~1933~~F~300 303~34~300~
+485~Chisala~Joyce~1970~~F~29~205~29~
+486~Kaunda~Judith~19??~~F~~204~~
+487~Thole~Judith Margaret Thandiwe~1958~~F~56~139~56~
+488~Chikoti~Judith Mercy Chikondano~1964~~F~152~45~152~
+489~Kaseka~Julia~1983~~F~~92~~
+490~Chisala~Julia~1985~~F~~205~~
+491~Likonje~Julia~19??~~F~57~~57~
+492~Kabutu~Juliette~19??~~F~216~198~216~
+493~Phiri~Julius~1938~~M~157~~157~
+494~Chitenje~Junior~19??~~M~~55~~
+495~Chisala~Justin Barry~1967~2000~M~~162~~
+496~Yegama~Justin Chiweyu~1930~~M~~208~~
+497~Kaseka~Justin~1955~~M~92~~92~
+498~Kaseka~Justin jnr.~1984~~M~~92~~
+499~Kamkwalala~Kamana Stephanie~1996~~F~~143~~
+500~Chimpango~Kambani Brian~19??~~M~~206~~
+501~Chirwa~Karen Akuzike~1991~~F~~113~~
+502~Kaunda~Katema~19??~~M~~70~~
+503~Chigowo~Katerina~1928~~F~87~170~87~
+504~Mmembe~Kawa~1982~~F~~191~~
+505~Chisasa~Kay~1948~2005~M~252~132~252~
+506~Chisala~Kazonde George~195?~~M~~99~~
+507~Chiwiya~Kedmond~195?~????~M~~3~~
+508~Chiwiya~Kennedy~19??~19??~M~~3~~
+509~Mtawale~Kenneth Chande~1941~2015~M~~40~~(20151007)  was living with sister Joyce in Mchinji
+510~Kayuza~Kenneth~1964~~M~~130~~
+511~Chiponda~Kerina~1976~~F~273~44~273~Tayamika born 22 May 2007Mar 09  Perhaps I should use Khellina?
+512~Mtawale~Kerina~19??~????~F~~138~~
+513~Chirambo~Ketenes~19??~~F~~111~~
+514~Dewasi~Khayiko~19??~19??~F~~112~~
+515~Chisala~Khumbachi~1983~~M~~94~~
+516~Salima~Khumbulawo Clement~1977~~M~217~11~217~
+517~Chisala~Kondwani~1970~~F~~31~~
+518~Mkandawire~Kondwani~1971~~M~~175~~
+519~Zabula~Kondwani~1972~~M~274~181~274~
+520~Mbuluma~Kondwani~1987~~F~~76~~
+521~Chirambo~Kondwani~19??~~F~~111~~
+522~Msowoya~Kondwani~1976~~F~239~16~239~
+523~Kaunda~Kotilida~18??~19??~F~7~91~7~
+524~Mbira/Chirwa~Kungani~19??~~F~~122~~
+525~Mbira~Kurare~19??~~F~193~122~193~
+526~Chisala~Lawrence~19??~~M~~41~~
+527~Yegama~Lawrence Attlee~19??~~M~208~64~208~
+528~Longwe~Lellie Brian~1957~~M~56~78~56~
+529~Chisala~Lennah~1994~~F~~59~~
+530~Chiwiya~Leo~19??~~M~~148~~
+531~Mbuluma~Leo~1935~1996~M~76~166~76~
+532~Tawe~Leonard~1960~2015~M~152~~152~
+533~Chiwiya~Leonard Thomas~19??~~M~~126~~
+534~Chisala~Levinia~1938~~F~16~159~16~
+535~Nkhoma~Levinia~19??~19??~F~170~4~170~Feb 07 This is the Mwasi (Katerina) and Chitowe (Ann) split
+536~Chisala~Lihele~1985~2004~M~~183~~
+537~Nyirenda~Likanga~19??~~F~~135~~
+538~Chisala~Lillian~1985~~F~~94~~
+539~Chisala~Lillian~1945~~F~164~65~164~
+540~Chitowe~Lilly~1938~1999~F~95~17~95~
+541~Msowoya~Limbani~1973~~M~238~16~238~
+542~Kanyinji~Limbani~1991~1999~M~~33~~
+543~Kamanga~Limbikani~1963~~F~47~~47~
+544~Zabula~Lisungu~1975~~M~~181~~
+545~Kanyinji~Lisungu~1994~~F~~33~~
+546~Medi~Lizzie Alexandra~1962~~F~83~~83~
+547~Chiwiya~Lloyd~19??~~M~~148~~
+548~Vundika~Lois~19??~~F~328~185~327~
+549~Mtawale~Lois Timale~19??~~F~~171~~
+550~Mwasi/Kawelama~Loise~19??~~F~~7~~
+551~Ndalama~Loise~1933~1993~F~43~19~43~
+552~Chiponda~Lorraine~1973~~F~~154~~
+553~Mbuluma~Louisa~1967~2002~F~147~76~147~
+554~Magesi~Luciano~19??~~M~~203~~
+555~Ndilowe~Lucky~19??~~M~~25~~
+556~Chande~Lucy~195?~~F~~62~~
+557~Masoambewe~Lucy~19??~~F~326~28~325~
+558~Magesi~Lucy~19??~~F~~203~~
+559~Chalila~Lucy~193?~1998~F~211~~211~
+560~Kalimba~Lucy~1938~~F~226~53~226~
+561~Katumbi~Lumbani~1984~~M~~142~~
+562~Chisala~Lydia~19??~~F~270~20~270~
+563~Chisala~Lydia~1950~2002~F~79~63~79~
+564~Akimu~Macdonald~1977~~M~~177~~
+565~Chiwiya~Mechlin~1921~2006~F~174~148~174~Jun 04  or is it Mechlin? the spellingcame from son Francis Makala.Her birthyear of 1921 dates various others  for instance she insists that Flower Cisasa who lives in the same village is older. She is far clearer than Flower thoughher sight is failing (Flower's hearing is too) Has a legendary reputation for fastidiuosness and when I visited in May 04 asked that I buy her  a kettle as she couldn't stand the way her tea was prepared in pots!
+566~Mapira~Macshudi~19??~~M~~95~~
+567~Chirwa~Madalitso~1968~~F~~116~~
+568~Chizara~Mafa~1952~~M~207~~207~
+569~Kaunda~Margaret Lucy~19??~19??~F~~197~~
+570~??~Magrate~18??~19??~F~1~~1~
+571~Chirwa~Maisha Bahati~1993~~F~~127~~
+572~Chiponda~Malvin Miko~1980~~M~~154~~
+573~Mtawale~Manfred~18??~~M~171~1~171~
+574~Mwasi~Manfred Sweeny~1916~1992~M~87~~87~
+575~Mwasi~Mannings~1958~2006~M~~96~~
+576~Nyirenda~Manyeta~19??~~F~~135~~
+577~Msowoya~Mara~1962~1993~F~9~16~9~
+578~Chiponda~Margaret~194?~~F~181~82~181~
+579~Chitowe~Margaret Mary~1956~~F~6~17~6~(20151004)  met her at Mrs Chisala funeral 2015
+580~Mtawale~Margaret~18??~19??~F~135~1~135~
+581~Mwasi~Margaret~19??~~F~141~~141~
+582~Chisala~Maria~1945~1972~F~320~159~320~
+583~Tawe~Maria~19??~~F~~152~~
+584~Mudyawanthu Kazembe~Mariam Akufawo Blandina~187?~19??~F~197~155~197~
+585~Chisala~Mark~1977~~M~~188~~
+586~Chinyamunyamu~Mark~2001~~M~~100~~
+587~Kaunda~Mark Katema~1959~19??~M~70~153~70~
+588~Ndilowe~Marshall~19??~~M~~25~~
+589~Chioko~Martha~19??~~F~203~97~203~
+590~Chizara~Martha Matata~1986~~F~~207~~
+591~Kaunda~Martin~1979~~M~~195~~
+592~Kaunda~Martin Green~1929~1929~M~~38~~
+593~Kanyinji~Martin~1954~1998~M~33~~33~
+594~Kaunda~Martin Milward~1922~2011~M~158~38~158~Martin Milward Kaunda  grew up in Chnyanya at paternal grandmother's home before going to school in Mutare then Rhodesia; moved to Lusaka Zambia before retiring worked in educational broadcasting. Married Josina Shaku from South Africa all children born there now scattered. By 2004 he had suffered two strokes.
+595~Kaunda~Martin Peter~1898~1954~M~38~197~38~Feb 07&nbsp; Born(?) in Chinyanya certainly grew up there at his mother's home  travelled to then Rhodesia where he worked as a chef returned to open a restaurant in Mbamba now considered the home of the 'Mthunthamas'. This restaurant now owned by the Msekas. Died of an ailment involving swelling feet.
+596~Kaunda~Martina Makone~1958~~F~92~158~92~
+597~Chirwa~Mary~1983~~F~~127~~
+598~Mwasi/Kawelama~Mary~19??~~F~~7~~
+599~Chisala~Mary~1949~~F~176~110~176~
+600~Kalimba~Mary~19??~~F~75~53~75~
+601~Mbila~Mary~19??~~F~121~50~121~
+602~Kaunda~Mary Penjani~18??~19??~F~81~169~81~(20150811)  told that her name was not Mpenja, but Penjani, by Vincent. Aug 2015
+603~Nkhoma~Mary~1905~1963~F~159~4~159~Feb 07 Abibi wife to the headmaster. Much liked came from Chiponde of the Thondoli Kaundas&nbsp;
+604~Mtawale~Mary Tewalinga~19??~~F~~209~~
+605~Thundu~Mary~19??~~F~98~14~98~
+606~Chiwiya~Masha~19??~~F~28~148~28~
+607~??~Masonga Jacob~1976~~M~~11~~
+608~Chisala~Matayo~1942~~M~205~63~205~
+609~Mwasi/Kawelama~Matthewin~19??~~M~~7~~
+610~Chiwiya~Maude~19??~~F~261~3~261~
+611~Mtawale~Maude~1904~1996~F~126~138~126~
+612~Tawe~Maude~1972~~F~93~133~93~
+613~Nkhoma~Maude*~19??~~F~~4~~
+614~Mwasi~Mauria~1957~~F~223~87~223~
+615~Chigowo~Maurice~19??~~M~170~~170~
+616~Chitowe~Maurice~1941~~M~5~17~5~
+617~Mbira~Mawowafa Thallisa~18??~19??~F~124 165~122~124~June 04  see Namande; the name Thallisa was obtained from Flower Chisasa (nee Ndalama)  one of the fewthings she could still recall (May 04); Flower died in 2005.
+618~Nkhoma~Maxwell Barnabas Lihele~18??~1946~M~~4~~
+619~Chisala~Maxwell~1959~~M~59~211~59~Feb 07 Architect; in 2006 decided to renovate his maternal granfather's property in Chiponde  the Uzanda house; In fact directly the grandma is a Chalira.
+620~Chisala~Maxwell Jnr.~1989~~M~~59~~
+621~Chiponda~May Gloria~1944~19??~F~163 67 48~82~163~
+622~Chisala~Mayamiko~19??~~M~~168~~
+623~Akimu~Mayamiko Martin~1978~~M~~177~~
+624~Chisala~Mayamiko Martin Philip~1958~2005~M~24 117 289~74~24~(Feb 07) Died Feb 5, 2005 in Blantyre; buried in Misesa next to dad. ##(June 04) Computer Programmer lived with mother in Chinyonga
+625~Phiri~Mbachi~1992~~F~~147~~
+626~Nyirenda~Mbonela~19??~~F~~135~~
+627~Phiri~Melinda~1987~~F~~147~~
+628~Itimu~Melvis~1958~1995~F~195~~195~
+629~Chalira~Memory~19??~~F~~176~~
+630~Chisala~Mercy~1976~~F~271~205~271~
+631~Liyama~Mercy~19??~~F~~193~~
+632~Mwalabu~Mercy~1955~~F~21 127~128~21~
+633~Kaunda~Mercy Shupa~1972~~F~~190~~
+634~Njewa/Choko~Merianna~19??~~F~~199~~
+635~Ndalama~Messalina~19??~~F~140 240~19~140~
+636~Mbvundula~Mfundo~1993~~M~~144~~
+637~Mkoko~Michael~1944~~M~~84~~This is the one who stood as MP in 2004 'reverend' formerly in Lilongwe
+638~Kayuza~Michael~1960~19??~M~~130~~
+639~Chisala~Michael~1961~~M~114 220~107~114~
+640~Chisala~Michael Hardson~19??~1974~M~66~160~66~Feb 07 This uncle married and died in Sakata Zomba  same village as the Likakus. Evidently travelled a bit and had kids elsewhere (was in the army?); Bernard a bit of a tearaway in BT!
+641~Chisala~Michael Jnr.~1990~~M~~114~~
+642~Mkoko~Michael~18??~19??~M~35~37~35~Jun 04  source of the male Mkoko relations  e.g. father Michael Mkoko follow
+643~Mkandawire~Mikness~1977~2006~F~228~~228~
+644~Kaunda~Mildred Taonga~1961~~F~316~158~316~
+645~Malunga~Mildred~1979~~F~217~~217~
+646~Chuza~Mirriam~1969~~F~~43~~
+647~Thundu~Milward Richard~1926~~M~~14~~
+648~Chikoti~Miriam~1978~~F~~173~~
+649~Chisala~Miriam~1986~~F~~59~~
+650~Kaunda~Mn\'gona Mankhwinya~18??~19??~M~169~~169~Feb 07 This is the Bwerero link to the   Longwes (Mary Mpenja) Rubadidris (Flora) and the Yegamas (Salimas Botomanis  via Weyani). The name 'Mankhwinya' has persisted in Usisya  see the second wife
+651~Kakhongwe~Monica~1927~~F~153~~153~
+652~Mbuluma~Monica~1943~~F~234~166~234~
+653~Chisala~Mordecai Charles~1995~~M~~117~~
+654~Chisala~Morris Barry~1963~~M~145~150~145~
+655~Chinseu~Moses~2000~~M~~29~~
+656~Kafandikhale~Moses~19??~~M~2~~2~
+657~Chisala~Mphatso Nancy~1993~~F~~89~~
+658~Kaunda~Mpho~1987~~M~~12~~
+659~Chisala~Mtendere~1973~2003~F~26~31~26~
+660~Chisala~Mthetho~1982~~M~332~210~~
+661~Mmembe~Mtunthama~1977~~M~~191~~
+662~??~Mtunthama~19??~~M~~51~~
+663~Kadango~Mwaona~19??~~F~~30~~
+664~Kanyinji~Mwayi~1994~~F~~33~~
+665~Chisala~Mwiza~1987~~M~~94~~
+666~Msowoya~Mzikila~1964~2007~M~~16~~
+667~Bandawe~N\'dasika~197?~~F~106~~106~
+668~??~Nafe~19??~~F~~120~~
+669~??~Namande~18??~19??~F~122~~122~June 04  according to either late Chitenje or Barnabas Thindwa (pre92 Zimbabwe) Namande came from Mozambique already with daughter Mawowafa  so Simeon + sisters are true MbiraMnjereChirwas.
+670~Chisala~Naome~19??~~F~~20~~
+671~Kaunda~Nathalie Chimwemwe~1956~~F~~158~~
+672~Chisala~Neema~1979~~F~269~188~269~
+673~Chin\'gomanje~Neema~19??~~F~~200~~
+674~Chiwiya~Neema~19??~~F~~125~~
+675~Chilalika~Neema~19??~~F~113~~113~
+676~Mtawale~Nellie~1955~~F~51 39~8~51~
+677~Njewa/Choko~Nelson~19??~19??~M~199~~199~
+678~Malizeni~Nester~19??~~F~50~149~50~
+679~Chirambo~Ngaila~1994~~F~~111~~
+680~Chisala~Ngawina Veronica~1987~~F~281~182~281~Born in Zomba 4th January
+681~Chinseu~Nicholas~19??~~M~29~~29~
+682~Nyasulu~Nkhulindachi~1959~~F~210~~210~
+683~Chisala~Nkhwachi Henry~1973~~M~~189~~
+684~Mbuluma~Noel~1972~~M~~76~~
+685~Maele~Noel~1981~~M~~32~~
+686~Chitenje~Noel~1922~1996~M~55~141~55~
+687~Chitenje~Noel~1954~1981~M~~55~~
+688~Chikoti~Noel Goodwin~1960~~M~72~45~72~
+689~Chidumu~Norah~1988~~F~~79~~
+690~Chirambo~Ntchindi~19??~~F~~111~~
+691~Mapemba~Ntongoza~19??~~M~~36~~
+692~Phiri~Okoma~19??~~M~~39~~
+693~Kaunda~Olganive~199?~~F~~90~~
+694~Chirambo~Olivia~19??~~F~~111~~
+695~Mbvundula~Orama~1987~~F~334~144~~
+696~Bere~Oscar B.~1957~~M~202~~202~
+697~Msowoya~Oscar~1937~1999~M~16~~16~
+698~Nkhoma~Oscar~19??~2001~M~9~~9~
+699~Mede~Pachalo~1973~~M~~86~~
+700~Chisala~Paison~1988~~F~~186~~
+701~Chisala~Palesa~1988~~F~329~210~~
+702~Chikoti~Pamela Annie~1984~~F~~83~~
+703~Chikoti~Pamela Mildred~1954~~F~~45~~
+704~Mede~Paschal~1983~~M~~86~~
+705~Masi~Patience~1982~~F~322~164~321~
+706~Mede~Patience~1970~2001~M~233~86~233~
+707~Mede~Patrick~1979~~M~~86~~
+708~Chirwa~Patrick~1985~~M~~127~~
+709~Kamoto~Patrick~19??~~M~~6~~
+710~Chisala~Patrick Malumbo~1977~~M~~150~~
+711~Chiponda~Paul~1975~~M~~154~~
+712~Kangunga~Paul~19??~~M~192~~192~
+713~Galanje~Pauline~1975~~F~109~~109~
+714~Chisala~Peace~1986~~F~~114~~
+715~Shiri~Perence~19??~~M~68~~68~
+716~Kaunda~Peter~1985~~M~~12~~
+717~Longwe~Peter~1915~~M~301~81~301~
+718~Kaunda~Peter Barrymore~1955~1978~M~~153~~
+719~Masi~Peter D.~2001~~M~~106~~
+720~Chiwiya~Peter Goodwin~19??~~M~~126~~
+721~Kaunda~Peter Martin~1984~~M~~190~~
+722~Masi~Peter~1972~~M~106~164~106~
+723~Matinga~Peter~1965~~M~161~~161~
+724~Matinga~Philip~1992~~M~~161~~
+725~Mbira~Rachel~19??~~F~71~122~71~
+726~Chisala~Raisa~1996~~F~~151~~
+727~Longwe~Rebecca~1952~~F~~78~~
+728~Chapuchapu~Regina~19??~~F~~57~~
+729~McKenzie~Rhys~1987~~M~~77~~
+730~Banda~Richard~1948~19??~M~~82~~
+731~Chirambo~Richard~19??~~M~~111~~
+732~Ndilowe~Richard~19??~19??~M~25~~25~
+733~Chisala~Richard Pascal~1927~1998~M~74 189 290 102 183~159~74~(20130914)  an illustrious life.
+734~Chisala~Richard Peter~1961~~M~~150~~
+735~Chisala~Richard Wanangwa~1971~~M~18~189~18~
+736~Mtawale~Robert~19??~~M~~209~~
+737~Tausi/Kalupo~Robert Francis Kalupo~19??~2003~M~~98~~
+738~Banda~Robin~1951~~M~~82~~
+739~Mpanda~Roderick~1968~~M~15~~15~
+740~Phiri~Ronald~19??~~M~~123~~
+741~Chirwa~Rose~1968~~F~297~163~297~
+742~Chisala~Rose~1943~~F~36~63~36~
+743~Chalira~Rose Mtendere~19??~~F~~176~~
+744~Chindongo~Rosemary~1942~~F~76~~76~
+745~Liabuba~Rosemary~1966~~F~220~~220~
+746~Mtawale~Rosemary Ngalayawo~19??~~F~298~34~298~
+747~Mbuluma~Royce Chilekeni~1969~~F~~101~~
+748~Kaunda~Ruth~1949~2007~F~58 2~153~58~Fisr t born daughterWorked in RTD for a long time as na officer then moved on to Min of Transport in LL where she lived in Kawale with at least one of her daughtersDied quite surprisingly to all Feb 18 2007 at Mwaiwathu hospital<p>&nbsp;Mar 09 This is a first use of &39;Geni&39;  added Gladson  no b&39;date yet
+749~Utonga~Ruth Suzani~1957~~F~182~267~182~Born in South Africa. Moved to Usiya when 3 years old. Mother to 5 and grandma to 1. Assitant Finance Officer at University of Malawi.
+750~Mtawale~Samuel~19??~~M~~40~~
+751~Chitendwe~Sanshika~1958~~F~12~~12~
+752~Longwe~Sarah~1943~~F~~78~~
+753~Kaseka~Sarah~1978~~F~~92~~
+754~Katumbi~Sarah~1981~~F~~142~~
+755~??~Sarai~18??~19??~F~4~119~4~Feb 07: Note some names here  Sarai Barnabas Maxwell Lihele. This is an unlce of the odl man who was apparently very fond of him and paid for his education at some stage. 'Never married'. This is one of two Sarais's  the other frm the opposite side. This is where relations in Chiponde hive off  see Esther (Mwasi/Mede); the Ndilowes and the 'Thondoli Kaundas' are from a level up  Sarai's sisters ...
+756~Chiwiya~Sarai~19??~~F~120~125~120~
+757~Chisala~Sarai Eunice~1979~~F~268~182~268~now moved to Portugal
+758~Kalupo~Sarai~19??~2003~F~232~98~232~
+759~Mkoko~Sarai~18??~19??~F~23~37~23~
+760~Roots~Sarai's~18??~~M~119~~119~Feb 07 Virginia is where the present Thondoli's come from the Ndilowes etc.
+761~Botomani~Scholastica Kirorwavo~1979~~F~~184~~
+762~Banda~Selina~19??~~F~59~~59~
+763~Chisasa~Shadreck~18??~1991~M~132~27~132~
+764~Chirwa~Shadreck Kwagwanji~1968~~M~113~104~113~
+765~Mpanda~Shamim~1996~~F~~15~~
+766~Chisoti Thundu~Shanan~19??~~M~247 296~14~247~
+767~Chiponda~Shelley~1972~~F~~154~~
+768~Chidyaonga~Shirley~1964~~F~90~~90~
+769~Mbuluma~Shukurani~19??~~F~~46~~
+770~Chikoti~Sidney Blasius~1958~~M~22 173~45~22~
+771~Chikoti~Sidney Dalitso~1992~~M~~83~~
+772~Chikoti~Sidney Darlington~1931~2006~M~45~~45~
+773~Chisala~Simeon Mnjere~18??~19??~M~23~122~23~
+774~Mtawale~Simon Chidaya~18??~~M~179 209~1~179~
+775~Chitowe~Simple~19??~~F~~103~~
+776~Bere~Sipiwe~1979~~F~~202~~
+777~Mohamed~Siwema~1960~~F~13~~13~
+778~Nyirenda~Solomon~19??~~M~~135~~
+779~Mtawale~Spearpoint Edward~193?~~M~8~54~8~Feb 07 One of the 'circular' relations  Hetty is a cousin.
+780~Ngwemba~Stanley~19??~~M~~75~~
+781~Chisasa~Steer~1906~198?~M~259~27~259~
+782~Mapemba~Stella~19??~~F~~36~~
+783~Chizara~Susan~1984~~F~~207~~
+784~Chiwiya~Sweeny~19??~~M~~125~~
+785~Yegama~Sylvia Darling~1934~2003~F~108~208~108~
+786~Masambo~Taalumba Jayson William~1988~~M~~180~~
+787~Kaunda~Taalumba Thenjiwe~1982~~F~~190~~
+788~Chisala~Talumba~19??~~F~~20~~
+789~Chalira~Tamala~19??~~F~~176~~
+790~Chilalika~Tamanda~1982~~M~~88~~
+791~??~Tanangachi~1985~~F~~49~~
+792~Chisala~Taonga~1977~~F~~31~~
+793~Chalira~Taonga~19??~~F~~176~~
+794~Chitowe~Taonga~19??~1980~F~~5~~
+795~Chizara~Tawonga Dorcas~1982~~F~~207~~
+796~Gondwe~Temwa~19??~200?~F~117~~117~
+797~Chisala~Temwani~1978~~F~~61~~
+798~Ganiza~Temwani~1988~~F~~115~~
+799~Chidumu~Tereza Agatha~1979~~F~~79~~
+800~Chisala~Thandikile Patience~1961~~F~144~74~144~June '04  Of Lilongwe IT fame owner of Epsion & Omega now works from home
+801~Longwe~Thandiwe~1994~~F~~56~~
+802~Gondwe~Thandiwe Marlyn~1972~~F~18~~18~
+803~Kaunda~Themba~1984~~M~~195~~
+804~Chiphala~Thokozile~1977~~F~172~21~172~
+805~Chisala~Thokozile Tabu~1980~~F~~24~~
+806~Kayuza~Thomas~1965~~M~~130~~
+807~Mtawale~Thomas~19??~~M~~34~~
+808~Mtawale~Thomas Goodwin~191?~199?~M~54 40~138~54~
+809~Mtawale~Thomas Ricardo~18??~19??~M~138~1~138~(Feb 07) Essentially NkhataBay folk even though some appear to have moved to Likoma at some point
+810~Mbuluma~Tidziwe~1978~~F~~76~~
+811~Mbuluma~Timvane~1973~~F~~76~~
+812~Mbuluma~Timwanani~19??~~F~~46~~
+813~Chisala~Tingawape~195?~~M~~99~~
+814~Chisala~Tinkhani~1980~~F~~94~~
+815~Kadango~Titha~19??~~F~~30~~
+816~Shiri~Tito~1992~~M~~68~~
+817~Chisala~Tiyembekeza~194?~~M~~99~~
+818~Kaunda~Thokozani~1980~~M~~195~~
+819~Kazembe~Thokozani~1985~~F~338~73~~
+820~Phiri~Tom~19??~~M~~123~~
+821~Mpinganjira~Tom~19??~~M~215~~215~
+822~Chisala~Tomaida Joyce~1969~~F~69~150~69~
+823~Kaunda~Tondoli Selwyn~19??~~M~~91~~
+824~??~Towera~1985~~F~~49~~
+825~Kayira~Tumani~19??~~F~~156~~
+826~Kamoto~Twesa~19??~~F~~6~~
+827~Vundika~Ubaba Grace~19??~~F~~80~~
+828~Chisala~Upendo~1980~~F~~102~~
+829~Chisala~Upendo~1981~~M~~94~~
+830~Chikoti~Upendo~1989~~F~~22~~
+831~Chirwa~Upendo Dumisani~1995~~F~~127~~
+832~Chisala~Upile Mary Nompikiso~1994~~F~287~182~287~Born July 13th 1994....Dad remember this please!!!! Born in Blantyre at Adventist Hospital.
+833~wife~Usisya~18??~19??~F~224~~224~
+834~Chitowe~John Valentine~19??~~M~17~291~17~
+835~Nyangulu~Vera~19??~~F~233~~233~
+836~Chin\'gomanje~Veronica~19??~~F~~200~~
+837~Kamkwalala~Veronica Alinane~1991~~F~~143~~
+838~Chitowe~Veronica Friday~1951~~F~30~17~30~
+839~Kaunda~Veronica~1933~2010~F~74~38~74~Agogo. Born in Likoma bred in Harare. Returned to the island when the old man set up restaurant 'Martins' at Mbamba. Went to secondary at Malosa for a nursing course that ended with marriage. Famously went to the US with all six kids in tow.
+840~Kaunda~Victor Lovemore~1945~~M~190~38~190~
+841~Chisala~Vincent~1936~2003~M~178 168 214~65~178~
+842~Chisala~Viola Lifowe~1963~2013~F~143~74~143~(20130914)  Passed away in little rock after a long and bravely fought battle with myeloma cancer. Lies in Washington DC##June 04  Washigton based member also in IT now naturalised but visits home evry 2 years.Married to World Bank economists Jonathan from Nkope MonkeyBay
+843~Malizeni~Violet~1961~~F~142~131~142~
+844~Mussa~Violet~196?~~F~167~~167~
+845~??~Virginia~18??~19??~F~91~119~91~
+846~Chirwa~William B~19??~~M~116~~116~
+847~Salima~Waddington~1930~1987~M~108~~108~
+848~Matinga~Watipasa~1991~~M~~129~~
+849~Chisala~Wellington~1948~1992~M~94 61~65~94~
+850~Kaunda~Weyani~18??~19??~F~64~169~64~
+851~Chirwa~William~1962~2005~M~~116~~
+852~Chisala~William~1991~~M~~89~~
+853~Mbawala~William~19??~~M~~121~~
+854~Chisala~William Boniface~1961~~M~89~211~89~
+855~Chimpango~William James Ulemelero~19??~~M~~206~~
+856~Chitowe~Wish~19??~~F~~103~~
+857~Lingawo~Wokha~1978~~M~276~187~276~
+858~Chisala~Wongani Sidney~1979~~M~295~178~295~
+859~Chisala~Yakobo~1903~197?~M~63 160~23~63~Feb 07 The Chilongozis are from Yofu. The other spouse  Chizomas are from the South side of Likoma  Mbungo. This is the earlier marriage. Beatrice &gt; the Kayuzas.
+860~Kadango~Yasmin~19??~~F~~30~~
+861~Mankhwanda~Yunah Mtawale~18??~19??~M~1~~1~Feb 07 The root of the maternal side  the Mtawales of NB. At some point settled at Khalambwe around the old court house. Not far from Maganga where Mn'gona Kaunda of Bwerero had another family.
+862~Chisala~Zaida Chachomwe~1966~~F~161~178~161~
+863~Chisasa~Zaida~1905~1991~F~65~27~65~
+864~Chisala~Zione~1972~~F~~66~~
+865~Kaseka~Zoe~1986~~F~~92~~
+866~Vundika~another~19??~~F~~80~~
+867~Komakoma~Maggie~19??~~F~201~146~201~
+868~wife~first~18??~19??~F~169~~169~
+869~wife~nkhatabay~18??~19??~F~212~~212~
+870~Chande~son~19??~~M~~62~~
+871~Chikukula~Lillian~1999~~F~~93~~
+872~Banda~MacDonald~????~~M~~239~~
+873~Banda~Mina~????~~F~~239~~
+874~Banda~MacDonald~????~~M~239~~239~
+875~Msowoya~Mara~2000~~F~~238~~
+876~??~Brigitte~????~~F~238~~238~
+877~Chaima~Temweka~????~~M~~237~~
+878~Chaima~Virginia~????~~F~~237~~
+879~Chaima~Rahabe~????~~F~~237~~
+880~Chaima~Steven~????~~M~237~~237~
+881~Mkuziona~Sylvia~1998~~F~~236~~
+882~Mkuziona~Bernard~1996~~M~~236~~
+883~Mkuziona~Bernard~19??~~M~236~~236~
+884~Nkhoma~Thokozile~1991~1993~F~~9~~
+885~Last,Name~New Spouse~????~~F~~~~
+886~Thindwa~Foster~????~~F~~140~~
+887~Novelu Chioko~??~????~~M~240~~240~
+888~Novelu~Foster~????~~F~241~240~241~
+889~Tambala~??~????~~M~241~~241~
+890~Kaluwayo~Hilda~1953~~F~~227~~
+891~Kaluwayo~Mary~1955~1999~F~242~227~242~
+892~Kaluwayo~Masa~1955~~F~~227~~
+893~Kaluwayo~James~1957~~M~~227~~
+894~Kaluwayo~Beatrice~1959~~F~~227~~
+895~Kaluwayo~John~1962~~M~~227~~
+896~Kaluwayo~Joyce~1963~~F~243~227~243~
+897~Kaluwayo~Lent Stella~1967~1992~F~~227~~
+898~Kaluwayo~Veronica~1969~~F~~227~~
+899~Mbewe~Pinto~19??~19??~M~242~~242~
+900~Kandoje~??~????~~M~243~~243~
+901~Kalande~George~19??~~M~244~~244~
+902~Kalande~Henry Sonjo~1957~~M~~244~~
+903~Kalande~Charles~1962~~M~~244~~
+904~Kalande~Michael~1964~~M~~244~~
+905~Kalande~Josephine~1966~~F~~244~~
+906~Kalande~Emmanuel~1968~~M~~244~~
+907~Kalande~Neema~1969~2004~F~~244~~
+908~Kalande~Boniface~1971~~M~~244~~
+909~Kalande~Clement~1973~~M~~244~~
+910~Kalande~Brenda~1975~~F~~244~~
+911~Kalande~Sandy~1980~~M~~244~~
+912~Kalande~Kondwani~1983~~F~~244~~
+913~Kalande~Elfrida Tembani~1985~~F~~244~~
+914~Kathingo~Agnes~1962~~F~245~234~245~
+915~Kathingo~Dalitso~1967~1990~F~~234~~
+916~Kathingo~Lovejoy~1969~2004~M~~234~~
+917~Kathingo~Grace~1970~~F~246~234~246~
+918~Kathingo~Dave~1972~~M~~234~~
+919~Kathingo~Leonard~1974~~M~~234~~
+920~Kathingo~Febbie~1976~~F~~234~~
+921~Kathingo~Benaya~1978~~M~~234~~
+922~Kathingo~Brighton~1982~~M~~234~~
+923~Gwanda~Harris Foster~????~~M~245~~245~
+924~Tembo~Louis~????~~M~246~~246~
+925~Liomba~Patience~????~~F~248~~248~
+926~Chisasa~Mayamiko~197?~~M~~248~~
+927~Chisasa~Lisungu~197?~~F~~248~~
+928~Chisasa~Thandiwe~????~~F~~248~~
+929~Chisasa~Boy~????~~M~~248~~
+930~Chisasa~Tsitsi~????~~F~~248~~
+931~Msewa~Ezaline~????~~F~249~~249~
+932~Chisasa~Tisungeni~????~~F~~249~~
+933~Chisasa~Medelina~????~~F~~249~~
+934~Chisasa~Fungai~????~~M~~249~~
+935~Chisasa~Shadreck~????~~M~~249~~
+936~Mwase~Martin~????~~M~250~~250~
+937~Mwase~Josiah~1994~~M~~250~~
+938~Chirwa~Bayiza~????~~M~251~~251~
+939~Chirwa~Asante~????~~M~~251~~
+940~Kumatenje~??~19??~199?~F~252~~252~
+941~Chisasa~Shadreck~1992~1993~M~~252~~
+942~Chisasa~Emmanuel~1994~~M~~252~~
+943~Mnyenga~Guy~????~~M~253~~253~
+944~Mkoko~Douglas~1923~2003~M~~84~~
+945~Chinkhota~Mary~19??~~F~214~~214~
+946~Kabefu~Chimwemwe~1939~2000~F~255~137~255~
+947~Goneka~Ellis~1955~~F~256~137~256~
+948~Mwinama~Amos~????~~M~254~~254~
+949~Mwinama~Amos~????~~M~~254~~
+950~Mwinama~Edgar~????~~M~~254~~
+951~Mwinama~Grace~????~~F~~254~~
+952~Mwinama~Emmanuel~????~~M~~254~~
+953~Mwinama~Catherine~????~~F~~254~~
+954~Mwinama~Veronica~????~~F~~254~~
+955~Mwinama~Monica~????~~F~~254~~
+956~Kumkwawa~Vincent~????~~M~255~~255~
+957~Chatupa~Morris~????~~M~256~~256~
+958~Mchosa~Guiness~????~~F~257~~257~
+959~Liyama~Magnus~1930~1964~M~~257~~
+960~Liyama~Lilly~1932~~F~258~257~258~
+961~Liyama~Charles~1940~~M~~257~~
+962~Chibwana~Andrea~????~~M~258~~258~
+963~Chibwana~Ellis~1955~2003~F~~258~~
+964~Chibwana~Michael~1962~~M~~258~~
+965~Chibwana~Joseph~1964~~M~~258~~
+966~Chibwana~Mayamiko Matthews~1967~~M~~258~~
+967~Liyama~Joseph~????~~M~~193~~
+968~Makomera~??~1922~2003~F~259~~259~
+969~Chisasa~Lucy~????~~F~~259~~
+970~Chisasa~Kingsley~1962~~M~~259~~
+971~Chisasa~Queen~????~~F~~259~~
+972~Chisasa~Canterbury~????~~M~~259~~
+973~Chisasa~Agnes~????~~F~~259~~
+974~Banda~Mary~????~~F~247~~247~
+975~Chisoti~Harriet~19??~2001~F~317~247~317~
+976~Chalunda~Harry~????~~M~260~~260~
+977~Chalunda~Taalumba Chimwemwe~????~~F~~260~~
+978~Kaunda~Sixpence~18??~~M~~91~~
+979~Kaunda~Dennis~19??~~M~~91~~
+980~Ndalama~??~????~~M~261~~261~
+981~Chisala~Billy~1972~~M~~214~~
+982~Chisala~Limbani~19??~~M~~134~~
+983~Hamela~Justin~197?~~M~263~~263~
+984~Hamela~Justin~197?~~M~263~~263~
+985~Hamela~Justin~197?~~M~263~~263~
+986~Nyekanyeka~Hastings Fukula~19??~~M~265~~265~
+987~Msosa~Esther~1979~~F~266~~266~
+988~Utonga~Rabani Freedom~1926~1976~M~267~~267~
+989~Schmidt~David Pascal~1982~~M~268~283~268~Germanborn artist; met Sarai in Zambia. Married in Cape Town South Africa.
+990~Hamela~Trevor~2006~~M~~263~~
+991~~Mercy~1999~~F~~264~~
+992~Kanduku~Joseph~1968~~M~264~~264~
+993~Masi~Amanda~2006~~F~~105~~
+994~Masi~Dwayne~2005~~M~~266~~
+995~Masi~Theodore~2005~~M~~106~~
+996~Masi~??~2006~~F~~106~~
+997~Chinyamunyamu~Lonjezo~2006~~M~~100~~
+998~Kangunga~Mkweze Theodora~2005~~F~~192~~
+999~Misomali~Felix~197?~~M~269~~269~
+1000~Msiska~Thumbiko~19??~~M~270~~270~
+1001~Sande~??~197?~~M~271~~271~
+1002~Dasu~??~19??~~M~272~~272~
+1003~Likubwe~Fellix~197?~~M~273~~273~
+1004~Nyirenda~Modesta~197?~~F~274~~274~
+1005~Mnyenga~John Edward~????~~M~275~253~275~(Feb 07) the wife here was from Tanzania. Daugthe Elizabeth now lives in  Lilongwe suffers from a goitre. Should be a good source ... additional information 3 Oct 2015 meet Joseph, works at ilovo. half brother, mom from Zomba
+1006~Mnyenga~Charles~19??~19??~M~~275~~
+1007~??~??~????~~M~275~~275~
+1008~Mnyenga~Elizabeth~1937~2008~F~~275~~
+1009~ChisalaTempelhoff~Anthony Pascal~2007~~M~~268~~(20130919)  Anthony Pascal born on Jun 1st in Cape Town South Africa. Previously known as peanut graduated ,'watermellon' and has now settled as 'Lala'. He takes his sleep very seriously and when he is awake he makes inquisitive faces and he is very expressive with his hands. at two weeks old he weighed 3.3kg and is growing each day. he's a little over 46cm tall.
+1010~Likubwe~Tayamika Abwino~2007~~M~~273~~
+1011~Nyekanyeka~Rehema Sitinga~2007~~F~~265~~
+1012~Chirambo~Werani~1979~~F~277~~277~
+1013~Zabula~Jeanelle~????~~F~~274~~
+1014~Zabula~Jaeden~????~~F~~274~~
+1015~Kamkwalala~Stanley~1928~~M~278~~278~
+1016~Chikoko~Christopher Mvano~19??~~M~279~~279~
+1017~Chikoko~Torbit~1980~~M~~279~~
+1018~Chikoko~Alinafe~1982~~M~~279~~
+1019~Chikoko~Wsidom~1984~~M~~279~~
+1020~Chikoko~Catherine~1986~~M~~279~~
+1021~Kapangama~Gladson~19??~~M~~58~~
+1022~Rugunda~Solomon~198?~~M~280~330~280~Son to Ruhakana Rugunda of Kabale SOuthwestern Uganda (near the Rwanda border). Father a prominent politician. In 2009 went to de teh permanent rep at the UN after long period as minster of interior/hoem affairs where he spent time negotiating withe notorious Joseph Kony.
+1023~Nathingani~Eunice~1936~1972~F~267~~267~
+1024~Utonga~Anna~196?~199?~F~294~267~294~
+1025~Utonga~Rita~196?~199?~F~~267~~
+1026~Schmidt~Ulrich~195?~~M~283~~283~
+1027~~Isolde~195?~~F~283~~283~
+1028~Chiomba~Adam~198?~~M~284~~284~
+1029~Chiomba~Brian~2002~~M~~284~~
+1030~Misomali~Ethel~1998~~F~~269~~
+1031~Misomali~Elsie~2009~~F~~269~~
+1036~Chisala~Thoedore Chimwemwe~2007~~M~~109~~
+1037~Magalasi~Akuzike~2008~~M~~222~~
+1038~Kangunga~Umanga Henry~2008~~M~~192~~
+1041~????~?~19??~~F~289~~289~
+1042~Chisala~Lusayo Linda~2004~~F~~289~~
+1043~Kachali~Catherine~1954~1994~F~290~~290~
+1044~Chisala~Sarah~1979~~F~~290~~
+1045~Chitowe~Edward Nemelayani~????~~M~291~~291~
+1046~????~?wife~????~~F~291~~291~
+1047~Chitowe~Mary~19??~~F~293~291~293~
+1048~Chitowe~Audrey~19??~~F~~291~~
+1049~Chitowe~Charity~19??~~F~~291~~
+1050~Chitowe~Margaret~19??~~F~~~~
+1052~Ndulilo~Lancelot~19??~~M~293~~293~
+1053~Utonga~?husband~19??~20??~M~294~~294~
+1054~Utonga~Moses~197?~~M~~294~~
+1055~Utonga~Temwachi~198?~~F~~294~~
+1056~Waluza~Prisca~198?~~F~295~~295~
+1057~????~?wife~????~~F~296~~296~
+1058~Chikoya~Douglas~19??~~M~~218~~
+1059~Magesi~Johanne~19??~~M~~203~~From NkhotaKota where they now live
+1060~Magesi~Emily~1992~~F~~203~~
+1061~Magesi~Grace~2003~~F~~203~~
+1062~Magesi~Gilbert~2003~~M~~203~~
+1063~????~Thoko~19??~~F~~297~~
+1064~????~Pachalo~19??~~M~~297~~
+1065~Ngolima~?husband~19??~~M~298~~298~
+1066~Komakoma~George~19??~~M~299~146~299~
+1067~????~Give~19??~~F~299~~299~
+1068~Mandona~Beatrice~1954~~F~319~300~~
+1069~Mandona~Kennedy Kabwe~1955~2014~M~~300~~
+1070~Mandona~Maureen~1957~~F~324~300~323~
+1071~Mandona~Harriet~1959~1997~F~~300~~
+1072~Mandona~Manyeta Henry~1961~~M~~300~~
+1073~Mandona~Michael~1963~~M~~300~~
+1074~Longwe~Esau~1941~~M~~301~~Dies around 1960 in Mtengula of cancer  came back from Zambia where he had gone to stay with father; same trip as with Beniah who had stayed with him
+1075~Longwe~Alice~1943~~F~~301~~
+1076~Longwe~Margaret~1947~~F~~301~~
+1077~Longwe~Elizabeth~1952~~F~~301~~
+1078~Longwe~Norah~1954~~F~~301~~
+1079~Longwe~Anne~1955~~F~304~301~304~
+1080~Longwe~Peter~1956~~M~~301~~
+1081~Longwe~Dorica~1958~~F~~301~~
+1082~Longwe~Dennis Chawanda~1963~~M~~301~~
+1083~Longwe~Arthur~1965~~M~~301~~
+1084~Longwe~Shadreck~1971~~M~~301~~
+1085~Schalkwyk~Rebecca~????~~F~301~~301~
+1086~Longwe~Chawanda~1960~~F~~302~~
+1087~Mwale~Mary~1939~~F~302~~302~
+1088~Longwe~Vijumo~1962~~M~~302~~
+1089~Longwe~Kwanja~1966~~M~~302~~
+1090~Longwe~Katongwe~1968~1972~M~~302~~
+1091~Longwe~Wezi~1972~~M~~302~~
+1095~Mandona~Alfred~1932~1974~M~300~~300~
+1096~Musafwa~Stanley~192?~~M~303~~303~
+1098~Musafwa~Weby~1968~~M~~303~~
+1099~Musafwa~Javis~19??~~M~~303~~
+1100~Musafwa~Chisada~????~~M~~303~~
+1101~Schmidt~Jeremy~2010~~M~~268~~
+1102~Rugunda~Micah Amani Asiimwe~2009~~M~~280~~
+1103~Chirwa~Colyns~194?~~M~304~~304~
+1109~????~?husband~????~~M~297~~297~
+1110~Makoni~Maude~1948~~F~307~~307~
+1111~Moyo~Charles~1970~~M~308 309~307~308~
+1112~Moyo~Harvey~1973~~M~310~307~310~
+1113~Moyo~Lillian~1977~~F~~307~~
+1114~Moyo~Andrew~1982~~M~~307~~
+1115~Moyo~Helen~1987~~F~~307~~
+1116~Moyo~Chande~1996~~F~~308~~
+1117~Nawa~Naomi~????~~F~308~~308~
+1118~Phiri~Gwen~197?~~F~309~~309~
+1120~Moyo~Dalitso~2009~~M~~309~~
+1121~Moyo~Edward~????~~M~~310~~
+1122~Mtunda~John~1954~1998~M~~226~~
+1123~Mtunda~Henry~1956~2000~M~~226~~
+1124~Mtunda~Oswald~1958~~M~~226~~
+1125~Mtunda~Andrew~1960~~M~~226~~
+1126~Mtunda~Dave~1962~~M~~226~~
+1127~Mtunda~Faith~1964~~F~~226~~
+1128~Mtunda~Anna~1966~~F~~226~~
+1129~Mtunda~Angela~1968~~F~~226~~
+1130~Mtunda~Helena~1972~~F~~226~~
+1131~Mtunda~Jacob~1972~~M~~226~~
+1132~Chisala~Constance~1970~~F~~194~~
+1133~from Madimba~?wife~????~~F~311~~311~
+1134~Chisala~????~????~~F~~134~~
+1135~Chisala~George~????~~M~~311~~
+1136~Gondwe~Waitha~1967~~F~312~~312~
+1137~Chisala~Mwenecho~1995~~M~~312~~
+1138~Chisala~Melinda~1997~~F~~312~~
+1140~Manda~Susan~1987~~F~313~~313~
+1141~Chisala~Lucinda~2007~~F~~313~~
+1142~Chisala~Lendisa~2009~~F~~313~~
+1143~Kaunda~Nyapawayi~1908~~F~314~212~314~
+1144~Kaunda~Flora~1920~2011~F~~212~~
+1145~Chirwa~?husband~????~~M~314~~314~
+1146~Chirwa~Jowoni~1926~~M~~314~~
+1147~Mudyawanthu Kazembe~Haroun~????~~M~~155~~
+1148~Mudyawanthu Kazembe~Charles~????~~M~~155~~
+1149~Mnyenga~Medellina~????~~F~315~253~315~
+1151~Yegama~?husband~????~~M~315~~315~
+1152~Yegama~John~????~~M~~315~~
+1153~Yegama~Miss~????~~F~~315~~
+1154~Yegama~Alexander~????~~M~~315~~
+1155~Kaunda~Chabala~????~~M~316~~316~
+1156~Kaunda~Chabala~????~~M~~316~~
+1157~Komen~Jacob 'Scuba' Peter~1986~~M~281~~281~
+1158~Komen~Jaxon Travis~2013~~M~~281~~Born in Blantyre
+1159~ChisalaTempelhoff~Luca Baer~2012~~M~331~268~~(20130914)  Born in Cape Town. I was a witness!
+1160~Banda~Eliza~194?~~F~~247~~
+1161~Phiri~Sakalani~194?~~M~317~~317~
+1162~Phiri~Emmanuel Sakalani~1979~~M~~317~~
+1163~Phiri~Malita~1980~~F~~317~~
+1164~Phiri~Simoni~1982~~M~~317~~
+1165~Chikopa~Goretti Musenge~1964~~F~336 337 318~~~(2016-02-04)  SK squeezed û##(2016-02-04)  second one##(2016-02-04)  first one
+1166~Msichili~Can't Recall~194?~~M~319~~~(20130915)  met them in Zambia July 2013
+1167~Chisasa~Kondwani~~~M~~249~~
+1168~Masi~Joshua~2010~~M~~266~~
+1169~Magalasi~Tadala~2013~~F~~222~~
+1170~Kanjere~Lonjezo~197?~~M~322~~~
+1171~Chinyamunyamu~Prince~2010~~M~~100~~
+1172~Mano~U~~~M~324~~~
+1174~Mnyenga~Joseph~1961~~F~~275~~
+1175~Chikoti~Esau~19??~~M~328~~~
+1176~1234~~~~F~23~~~
+1177~Chabunya~Sylvester~~~M~329~~~known as sly. married early 2016 St Ku cawr
+1178~Rugunda~Ezekiel Adam Tashobya~2015~~M~~280~~(2016-02-04)  born 2015-6-25. that's the 25th of June
+1179~Rugunda~Ruhukana~~~M~330~~~
+1180~Unknown~Jocelyn~~~F~330~~~
+1181~Dierisseau~Beatrice~~~F~332~~~
+1182~Nyekanyeka~Ramona  ~2009~~F~~265~~
+1183~Nyekanyeka~Rianne Amira~2011~~F~~265~~
+1184~~Sekani~~~F~333~~~
+1185~Masambo~Eliana Rose~2014~~F~~333~~
+1186~Karim~Moses~~~M~334~~~
+1187~Mkandawire~Marrion~198?~~F~335~~~
+1188~Chikoti~Wema~2014~~F~~335~~
+1189~Ncube~Mbonisi~1963~~M~336~~~
+1190~Ncube~Samantha~1986~~F~~336~~
+1191~Brisbane~Richard~1957~~M~337~~~
+1192~Brisbane~Rebecca~2006~~F~~337~~
+1193~Wife~?~~~F~278~~~
+1194~Brown~?~~~M~338~~~
