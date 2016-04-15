@@ -38,6 +38,7 @@ public class TreeFragment extends Fragment {
     private float TXY = 25; // y-offset for writing label
     private float BW = 5; // half the box width - for teh red box at labelled vertices
     private float LW = 3; //line width
+    private float CHFACTOR = 3.2f; // factor for decidng text width
 
     private static final String LOGGER = "bpc_tree"; //Log.d(LOGGER, "page = " + real_id + ", member = " + member_id);
 
@@ -100,6 +101,7 @@ public class TreeFragment extends Fragment {
             TXY = 25 * 2; // y-offset for writing label
             BW = 5 * 2; // half the box width - for teh red box at labelled vertices
             LW = 3 * 2; //line width
+            CHFACTOR = 4 * 1.5F;
         }
     }
 
@@ -187,7 +189,8 @@ public class TreeFragment extends Fragment {
     public class Vert {
         private String label = ""; /* empty unless this is a 'pointed' vertex, which is only possible for 'reals' */
         private float x = 0; /* x- coordinate*/
-        public float y;
+        private float y;
+        private float tdx = 0; // text delta-x - how much to shift text in the x-direction
 
         public Vert() {
         }
@@ -209,10 +212,10 @@ public class TreeFragment extends Fragment {
                 if (label.contains(";")) {
                     String[] Ar = label.split(";");
                     String top = Ar[0], bottom = Ar[1];
-                    canvas.drawText(top, x, y + TXY, paint);
-                    canvas.drawText(bottom, x, y + TXY + Y3, paint);
+                    canvas.drawText(top, x+tdx, y + TXY, paint);
+                    canvas.drawText(bottom, x+tdx, y + TXY + Y3, paint);
                 } else {
-                    canvas.drawText(label, x, y + TXY, paint);
+                    canvas.drawText(label, x+tdx, y + TXY, paint);
                 }
                 paint.setColor(Color.RED);
                 paint.setStrokeWidth(2 * BW);
@@ -394,6 +397,7 @@ public class TreeFragment extends Fragment {
 
     public class Rows {
         private ArrayList<Strip> strips = new ArrayList<>(); /* this row's 'vertices' */
+        private  ArrayList<Strip> myStrips;
         private ArrayList<Float> xs = new ArrayList<>();
         private int level = 0;
         private int xptr = 0; /* how many xs's consumed */
@@ -428,10 +432,14 @@ public class TreeFragment extends Fragment {
          * @return : this, for tandem calls
          */
         public Rows endRow() {
+            //isolate ours
+            myStrips = new ArrayList<>();
+            for (Strip S : strips) {
+                if (S.level == level) myStrips.add(S);
+            }
             //assign the x-coordinates of each strip S
             float left_edge = 0; // LEFT??
-            for (Strip S : strips) {
-                if (S.level != level) continue;
+            for (Strip S : myStrips) {
                 //place our vertices, establish left <-- left_edge ++
                 S.placeVerts(left_edge);
                 left_edge += S.getWidth() + MRS;
@@ -439,11 +447,12 @@ public class TreeFragment extends Fragment {
             //fix the relative positions of strips. average for solitaries.
             //take separations and xs' into account for more
             arrangeStrips(); // see below
+            //correct text
+            fixTexts();
             //replace listing xs with the x-coordinates for the next level - positions of labelled vertices
             xs = null;
             xptr = 0;
-            for (Strip S : strips) {
-                if (S.level != level) continue;
+            for (Strip S : myStrips) {
                 ArrayList<Float> newxs = new ArrayList<>();
                 for (Vert V : S.vertices) {
                     if (!V.label.isEmpty()) {
@@ -459,6 +468,22 @@ public class TreeFragment extends Fragment {
             return this;
         }
 
+        private void fixTexts() {
+            float leftBound = 0; // we should not meet this
+            for (Strip S : myStrips) {
+                for (Vert V: S.vertices){
+                    if(V.label.isEmpty()) continue;
+                    CharSequence lb = V.label;
+                    float dx = lb.length()*CHFACTOR;
+                    if( V.x-dx < leftBound ){ // only here d we shift the text
+                        V.tdx = leftBound -V.x+dx + PAD/2;
+                    }
+                    leftBound = V.x + V.tdx + dx ;
+                }
+            }
+        }
+
+
 
         /**
          * list optional arrangements taking into account the values in xs
@@ -468,12 +493,7 @@ public class TreeFragment extends Fragment {
          * by the average of the two.
          */
         private void arrangeStrips() {
-            // select the strips we want
-            ArrayList<Strip> myStrips = new ArrayList<>();
-            for (Strip S : strips) {
-                if (S.level == level) myStrips.add(S);
-            }
-            // only one?
+            // only one strip?
             if (myStrips.size() == 1) {
                 Strip S0 = myStrips.get(0);
                 S0.moveBy(S0.setAveZero());
