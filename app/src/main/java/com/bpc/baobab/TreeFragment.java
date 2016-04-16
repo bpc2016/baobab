@@ -40,6 +40,7 @@ public class TreeFragment extends Fragment {
     private float BW = 5; // half the box width - for the red box at labelled vertices
     private float LW = 3; //line width
     private float CHFACTOR = 3.2f; // factor for deciding text width
+    private float CBOX = 50; // diameter of box for clicking on tree
 
     private static final String LOGGER = "bpc_tree"; //Log.d(LOGGER, "page = " + real_id + ", member = " + member_id);
 
@@ -136,6 +137,7 @@ public class TreeFragment extends Fragment {
             BW = 5 * 2; // half the box width - for the red box at labelled vertices
             LW = 3 * 2; //line width
             CHFACTOR = 4 * 1.5F;
+            CBOX = 50 * 2 ; // diameter of box for clicking on tree
         }
     }
 
@@ -618,7 +620,7 @@ public class TreeFragment extends Fragment {
                 for (Vert V : S.vertices) {
                     if (V.label.isEmpty()) continue ;
                     if (V.page.isEmpty()) continue;  // this is what we really check for
-                    if (Math.abs(V.x-x)<50 && Math.abs(V.y-y)<50){
+                    if (Math.abs(V.x-x)<CBOX && Math.abs(V.y-y)<CBOX){
                         mCallback.toPage(V.page);
                         break out;
                     }
