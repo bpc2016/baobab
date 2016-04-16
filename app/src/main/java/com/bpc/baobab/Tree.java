@@ -7,7 +7,8 @@ import android.content.Context;
 import java.util.ArrayList;
 
 /**
- * Created by hp on 3/14/2016.
+ * Created on 3/14/2016.
+ * the basic tree class - a tree is a list of nodes; a node is an extension of member
  */
 public class Tree {
     private ArrayList<Node> nodes;
@@ -28,18 +29,6 @@ public class Tree {
         grow();
     }
 
-/*    public Tree(Context ctx, Member mem){
-        fh = new Family(ctx);
-        nodes = new ArrayList<>();
-        Node N = new Node(mem);
-        N.p_length=1; // N.index=N.p_length=1;
-        N.home_ad=-1; *//* stop condition *//*
-        N.my_ad=0;
-        nodes.add(N);
-        //develop the tree
-        grow();
-    }*/
-
     //methods
 
     public int getCount(){
@@ -49,10 +38,6 @@ public class Tree {
     public Member getMember(int position){
         return nodes.get(position);
     }
-
-    /*public int getIndex(int position) {
-        return nodes.get(position).index;
-    }*/
 
     /**
      *
@@ -75,10 +60,9 @@ public class Tree {
                 } else {
                     mother = N; N = father;
                 }
-                fh.loadMember(N,parentData[1]); // load the other parent
-//                int myad = node.my_ad;
-                this.add(father,node,true)
-                    .add(mother,node,false);
+                fh.loadMember(N,parentData[1]);
+                this.add(father,node)
+                    .add(mother,node);
                 parents = 2;
             }
             node.unseen = false;
@@ -87,14 +71,12 @@ public class Tree {
         return  parents;
     }
 
-    private Tree add(Node parent, Node my, boolean is_father){ //, int i, int home) {
-//        Node N = new Node(member); //new Node(member, is_father ? 2*my.index : 2*my.index+1 );
+    private Tree add(Node parent, Node my){
         parent.home_ad = my.my_ad;
         parent.p_length = my.p_length+1;
         parent.my_ad = nodes.size();
         //attach it
         nodes.add(parent);
-//        Log.d(LOGGER, " node: " + N.print()+" --> "+ nodes.get(N.home_ad).print());
         return this;
     }
 
@@ -166,7 +148,6 @@ public class Tree {
 
 
     /**
-     *
      * @param n - node to search from
      * @return - the nodes addresses of a path from n to home (backwards)
      */
@@ -180,12 +161,7 @@ public class Tree {
         return ret;
     }
 
-    public Member memberAt(int ind){
-        return nodes.get(ind);
-    }
-
     /**
-     *
      * @param ind - tree index of node to search from
      * @return list of nodes starting at T(ind) down to root = T(0)
      */
@@ -226,7 +202,7 @@ public class Tree {
         private int home_ad; /* the way home: */
         public int p_length; /* path length - to root*/
         public String siblings=""; /* space delimited listing of my siblings - includes myself! */
-        private boolean flag = false; /* useful in seraches etc */
+        private boolean flag = false; /* useful in searches etc */
 
 
         /**
@@ -245,22 +221,6 @@ public class Tree {
         public int getMyad(){ return my_ad; }
         public int homewards() { return home_ad; }
         public String getSiblings() { return siblings; }
-        public String print(){
-            return "("+p_length+") "+ this.getFullname();
-        }
-        /**
-         *
-         * @return  x == y names of parents, provided that not root!
-         */
-        public String parents(){
-            if (0==my_ad) return "(0) " + this.getFullname();
-            int spouse_ad = this.getGender().equals("M") ? my_ad+1 : my_ad-1; // we are attached next to each other
-            Member spouse = nodes.get(spouse_ad);
-            int reduced = p_length-1;
-            return "("+reduced+")" + this.getFullname()+" = "+spouse.getFullname();
-        }
-
-
 
         public boolean testFlag() {
             return flag;
@@ -270,92 +230,5 @@ public class Tree {
             flag = true;
         }
     }
-
-
-/*
-
-    // node class
-    protected class Node{
-//        private int index;
-        private Member member;
-        private boolean is_leaf=true;
-        private boolean unseen=true;
-        private int my_ad; */
-/*pointer into nodes list *//*
-
-        private int home_ad; */
-/* the way home: *//*
-
-        public int p_length; */
-/* path length - to root*//*
-
-
-        */
-/**
-         *
-         * @param mem - a Member ID
-         *            set index=1 if we are able to access the Member from db
-         *//*
-
-        public Node(String mem){
-            Member themember = fh.getMember(mem);
-            if (null != themember) {
-                member=themember;
-            } else
-                member = new Member();
-        }
-
-        public  Node(Member mem){
-            member = mem;
-        }
-
-*/
-/*        public  Node(Member mem, int i){
-            index = i;
-            member = mem;
-        }*//*
-
-
-        //getters
-        public Member getMember(){
-            return member;
-        }
-
-        public int getMyad(){ return my_ad; }
-
-*/
-/*
-        public int getIndex(){
-            return index;
-        }
-*//*
-
-
-        //others
-        public String print(){
-//            return "("+index+","+p_length+") "+member.getFullname();
-            return "("+p_length+") "+member.getFullname();
-        }
-
-        */
-/**
-         *
-         * @return  x == y names of parents, provided that not root!
-         *//*
-
-        public String parents(){
-            if (0==my_ad) return "(0) "+member.getFullname();
-//            int spouse_ad = index%2==0 ? my_ad+1 : my_ad-1; // we are attached next to each other
-            int spouse_ad = member.getGender().equals("M") ? my_ad+1 : my_ad-1; // we are attached next to each other
-            Member spouse = nodes.get(spouse_ad).member;
-            int reduced = p_length-1;
-            return "("+reduced+")"+member.getFullname()+" = "+spouse.getFullname();
-        }
-
-        public int homewards() {
-            return home_ad;
-        }
-    }
-*/
 
 }
