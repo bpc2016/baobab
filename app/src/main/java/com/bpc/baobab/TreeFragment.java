@@ -10,6 +10,7 @@ import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -42,12 +43,30 @@ public class TreeFragment extends Fragment {
 
     private static final String LOGGER = "bpc_tree"; //Log.d(LOGGER, "page = " + real_id + ", member = " + member_id);
 
+    //************** interface
+    // Container Activity must implement this interface
+    public interface treeListener {
+        void toPage(String target);  // jump to this page - given pageID
+    }
+
     //************* vars
     private Rows theRows;
     private float LEFT, RIGHT;
     private ArrayList<String> mTreeData;
+    private treeListener mCallback;
 
     public TreeFragment() {} // generic constructor
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        try {
+            mCallback = (treeListener) getActivity();
+        } catch (ClassCastException e) {
+            throw new ClassCastException(getActivity().toString()
+                    + " must implement treeListener");
+        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -68,7 +87,7 @@ public class TreeFragment extends Fragment {
         int WIDTH = outSize.x;
         int HEIGHT = outSize.y;
 
-        Log.d(LOGGER, "width " + WIDTH);
+        Log.d(LOGGER, "got width " + WIDTH);
 
         dimensions(WIDTH); // reset these in context
 
@@ -79,7 +98,22 @@ public class TreeFragment extends Fragment {
 
         LinearLayout v1 = (LinearLayout) v.findViewById(R.id.tree_material);
 
-        v1.addView(new TreeView(getActivity(), theRows, WIDTH, HEIGHT));
+        TreeView mTV = new TreeView(getActivity(), theRows, WIDTH, HEIGHT);
+
+        mTV.setFocusable(true);
+        mTV.setOnTouchListener(new View.OnTouchListener() {
+            @Override public boolean onTouch(View v, MotionEvent event) {
+                if (MotionEvent.ACTION_DOWN != event.getAction()) {
+                    return false;
+                }
+    //Log.d(LOGGER, "X = "+event.getX() +", Y = "+event.getY() );
+                theRows.goTo(event.getX(),event.getY());
+                return true;
+            }
+        });
+
+        // add this view to v1 ...
+        v1.addView(mTV);
         return v;
     }
 
@@ -128,11 +162,12 @@ public class TreeFragment extends Fragment {
                         index[i] = Integer.parseInt(sinAr[i]);
                     }
                     String[] labels = Ar[2].split(":");
-                    theRows = new Rows(num, index, labels)
+                    String[] pages = Ar[3].split(":");
+                    theRows = new Rows(num, index, labels, pages)
                             .endRow(); // using the array version
                 } else
                     theRows = new Rows(encoded)
-                            .endRow();
+                            .endRow(); // this is not expected to carry address information
             } else {
                 String[] encAr = encoded.split("&");
                 for (String encStr : encAr) {
@@ -153,17 +188,18 @@ public class TreeFragment extends Fragment {
                         String[] Ar = encStr.split(",");
                         int num = Integer.parseInt(Ar[0]);
                         String[] sinAr = Ar[1].split(":");
-                        int[] index = new int[sinAr.length];
+                        int[] indexAr = new int[sinAr.length];
                         for (int i = 0; i < sinAr.length; i++) {
-                            index[i] = Integer.parseInt(sinAr[i]);
+                            indexAr[i] = Integer.parseInt(sinAr[i]);
                         }
-                        String[] labels = Ar[2].split(":");
-                        theRows.add(new Strip(num, index, labels)); // using the array version
+                        String[] labelsAr = Ar[2].split(":");
+                        String[] pagesAr = Ar[3].split(":");
+                        theRows.add(new Strip(num, indexAr, labelsAr,pagesAr)); // using the array version
                     } else {
-                        String[] Ar = encStr.split(",");
+                        String[] Ar = encStr.split(","); // num, index, label, page
                         int num = Integer.parseInt(Ar[0]);
                         int index = Integer.parseInt(Ar[1]);
-                        theRows.add(new Strip(num, index, Ar[2]));
+                        theRows.add(new Strip(num, index, Ar[2], Ar[3]));
                     }
                 }
                 theRows.endRow();
@@ -191,6 +227,7 @@ public class TreeFragment extends Fragment {
         private float x = 0; /* x- coordinate*/
         private float y;
         private float tdx = 0; // text delta-x - how much to shift text in the x-direction
+        public String page = ""; // the associated page in Pages db
 
         public Vert() {}
 
@@ -230,8 +267,7 @@ public class TreeFragment extends Fragment {
     public class Strip {
         private ArrayList<Vert> vertices = new ArrayList<>(); /* this row's vertices */
         private ArrayList<Integer> labelPos = new ArrayList<>(); /* where these occur */
-        //bounds
-        float left = LEFT;
+        float left = LEFT; //bounds
         float right = RIGHT;
         float upx = 0; /* x-coordinate we all poiunt up to */
         float y; /* common y-coordinates */
@@ -242,7 +278,7 @@ public class TreeFragment extends Fragment {
          * @param indexAr : indices of 'live' vertices
          * @param labelAr : labels of live vertices
          */
-        Strip(int numvtcs, int[] indexAr, String[] labelAr) {
+        Strip(int numvtcs, int[] indexAr, String[] labelAr, String[] pagesAr) {
             int len = indexAr.length;
             if (len != labelAr.length) return;
             int j = 0;
@@ -250,17 +286,19 @@ public class TreeFragment extends Fragment {
                 Vert V = new Vert();
                 if (j < len && i == indexAr[j]) {
                     V.label = labelAr[j];
+                    V.page = pagesAr[j];
                     j++;
                 }
                 vertices.add(V);
             }
         }
 
-        Strip(int numvtcs, int index, String label) {
+        Strip(int numvtcs, int index, String label, String page) {
             for (int i = 0; i < numvtcs; i++) {
                 Vert V = new Vert();
                 if (i == index) {
                     V.label = label;
+                    V.page = page;
                 }
                 vertices.add(V);
             }
@@ -273,7 +311,6 @@ public class TreeFragment extends Fragment {
 
         public Strip setLevel(int lev, float in_y) {
             level = lev;
-            //y = Y0 + lev * DY;
             y = in_y;
             for (Vert V : vertices) {
                 V.y = y;
@@ -404,10 +441,11 @@ public class TreeFragment extends Fragment {
          * @param numvtcs : number of vectors in total
          * @param indexAr : array of indices of labeled vertices
          * @param labelAr : associated labels
+         * @param pagesAr : associated pages
          */
-        public Rows(int numvtcs, int[] indexAr, String[] labelAr) {
+        public Rows(int numvtcs, int[] indexAr, String[] labelAr, String [] pagesAr) {
             current_y = Y0+5;
-            Strip S = new Strip(numvtcs, indexAr, labelAr)
+            Strip S = new Strip(numvtcs, indexAr, labelAr, pagesAr)
                     .setLevel(0, current_y);
             strips.add(S);
         }
@@ -418,7 +456,7 @@ public class TreeFragment extends Fragment {
          */
         public Rows(String label) {
             current_y = Y0;
-            Strip S = new Strip(1, 0, label)
+            Strip S = new Strip(1, 0, label, "")   // we call this one with an empty page
                     .setLevel(0, current_y);
             strips.add(S);
         }
@@ -464,6 +502,9 @@ public class TreeFragment extends Fragment {
             return this;
         }
 
+        /**
+         * reposition the texts so that they do not overlap or move outside the visible area
+         */
         private void fixTexts() {
             float leftBound = 0; // we should not meet this
             for (Strip S : myStrips) {
@@ -565,6 +606,25 @@ public class TreeFragment extends Fragment {
             strips.add(S.setLevel(level, current_y));
             return this;
         }
+
+        /**
+         * jump to the page owned by the closest labelled vertex to (x,y)
+         * @param x : x-coordinate
+         * @param y : y-coordinate
+         */
+        public void goTo(float x, float y) {
+            out:
+            for(Strip S : strips) {
+                for (Vert V : S.vertices) {
+                    if (V.label.isEmpty()) continue ;
+                    if (V.page.isEmpty()) continue;  // this is what we really check for
+                    if (Math.abs(V.x-x)<50 && Math.abs(V.y-y)<50){
+                        mCallback.toPage(V.page);
+                        break out;
+                    }
+                }
+            }
+        }
     }
 
 
@@ -588,7 +648,6 @@ public class TreeFragment extends Fragment {
         protected void onDraw(Canvas canvas) {
             canvas.drawColor(Color.WHITE);
             theRows.draw(canvas);
-
         }
     }
 }

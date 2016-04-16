@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements
         AddParentsFragment.addparentListener,
         SorterFragment.sortListener,
         SearchFragment.searchListener,
+        TreeFragment.treeListener,
         NewMemberFragment.newmemberListener {
 
     private static final String LOGGER = "bpc_main"; //Log.d(LOGGER, "page = " + real_id + ", member = " + member_id);

@@ -142,13 +142,13 @@ public class LineageFragment extends Fragment {
                                 i_m = j;
                             }
                         }
-                        String t_str = num + "," + i_t + "," + oTree.nodeNames(nt),
-                                m_str = m_num + "," + i_m + "," + myTree.nodeNames(nmgood);
-                        // still have to decide the order m<t or t<m ? comes from deciding 1st row
-                        String mypages = nm_prev.getMyPages();
                         String m_par = nmgood.getPar();
                         String t_par = nt.getPar();
-                        myAr = mypages.split(" ");
+                        String t_str = num + "," + i_t + "," + oTree.nodeNames(nt)+ "," + t_par,
+                                m_str = m_num + "," + i_m + "," + myTree.nodeNames(nmgood)+ "," + m_par;
+                        // still have to decide the order m<t or t<m ? comes from deciding 1st row
+//                        String mypages = nm_prev.getMyPages();
+                        myAr = nm_prev.getMyPages().split(" ");
                         int z_num = myAr.length;
                         for (int j = 0; j < z_num; j++) {
                             if (myAr[j].equals(t_par)) {
@@ -160,15 +160,14 @@ public class LineageFragment extends Fragment {
                         }
                         //note the ordering
                         mRev.put(nm_src, i_m < i_t); // map the path source to the ordering of trees
-                        String encoding = z_num + ",";//L.add(num + "," + index + "," + myTree.nodeNames(m));
-                        // encoding for tree single lines, multiple expandables uses ':'
-                        //set the default for the first line:
+                        String encoding = z_num + ",";// start of top (zero) line
+                        //set the first two lines
                         String first_str = m_str + "&" + t_str;
-                        if (i_t < i_m) {
-                            encoding += i_t + ":" + i_m + "," + oTree.nodeNames(nt_prev) + ":" + myTree.nodeNames(nm_prev);
+                        if (i_t < i_m) { // note that we disable address on the zero line - as with all other cases
+                            encoding += i_t + ":" + i_m + "," + oTree.nodeNames(nt_prev) + ":" + myTree.nodeNames(nm_prev)+ ",:";
                             first_str = t_str + "&" + m_str;
                         } else
-                            encoding += i_m + ":" + i_t + "," + myTree.nodeNames(nm_prev) + ":" + oTree.nodeNames(nt_prev); // the default
+                            encoding += i_m + ":" + i_t + "," + myTree.nodeNames(nm_prev) + ":" + oTree.nodeNames(nt_prev)+",:"; // the default
                         mFirstLine.put(nm_src, first_str); // map the path source to encoding for first line
                         mZeroLine.put(nm_src, encoding);
                         mNodes.add(nm_src);
@@ -180,9 +179,9 @@ public class LineageFragment extends Fragment {
                         String encoding = num + ",";//L.add(num + "," + index + "," + myTree.nodeNames(m));
                         // encoding for tree single lines, multiple expandables uses ':'
                         if (i_t < i_m) {
-                            encoding += i_t + ":" + i_m + "," + oTree.nodeNames(nt) + ":" + myTree.nodeNames(nmgood);
+                            encoding += i_t + ":" + i_m + "," + oTree.nodeNames(nt) + ":" + myTree.nodeNames(nmgood)+ "," + nt.getPar()+ ":" + nmgood.getPar();
                         } else
-                            encoding += i_m + ":" + i_t + "," + myTree.nodeNames(nmgood) + ":" + oTree.nodeNames(nt); // the default
+                            encoding += i_m + ":" + i_t + "," + myTree.nodeNames(nmgood) + ":" + oTree.nodeNames(nt)+ "," + nmgood.getPar()+ ":" + nt.getPar(); // the default
                         mFirstLine.put(nm_src, encoding); // map the path source to encoding for first line
                         // deal with it
                         mOsrc.put(nm_src, nt_prev.getMyad()); // assign the int address for tree Otree here
@@ -254,7 +253,7 @@ public class LineageFragment extends Fragment {
                         break;
                     }
                 }
-                L.add(num + "," + index + "," + myTree.nodeNames(m)); // encode for tree
+                L.add(num + "," + index + "," + myTree.nodeNames(m)+ "," + m.getPar()); // encode for tree
             }
             k++;
         }
@@ -272,7 +271,7 @@ public class LineageFragment extends Fragment {
                 break;
             }
         }
-        return (num + "," + index + "," + T.nodeNames(m)); // encode for tree
+        return (num + "," + index + "," + T.nodeNames(m)+ "," + m.getPar()); // encode for tree
     }
 
     public ArrayList<String> encodedList(boolean wantRelation, int src) {
@@ -280,7 +279,7 @@ public class LineageFragment extends Fragment {
         // we are seeking a relation ....
         ArrayList<String> L = new ArrayList<>();
         L.add(mZeroLine.get(src));
-        L.add(mFirstLine.get(src)); // special first line - has a single strip
+        L.add(mFirstLine.get(src)); // special first two lines - has a single strip
         //gather data from the paths
         ArrayList<Tree.Node> Lp, Rp;
         Tree LT, RT;
