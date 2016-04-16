@@ -16,7 +16,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 /**
- * Created by hp on 1/14/2016.
+ * Created  on 1/14/2016.
+ * fragment that implements searching for members in the db
  */
 public class SearchFragment extends ListFragment {
 
